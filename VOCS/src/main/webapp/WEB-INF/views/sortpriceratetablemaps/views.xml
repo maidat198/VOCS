@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
 <tiles-definitions>
-    <definition extends="default" name="sortpriceratetablemaps/list">
+    <!-- <definition extends="default" name="sortpriceratetablemaps/list">
         <put-attribute name="body" value="/WEB-INF/views/sortpriceratetablemaps/list.jspx"/>
     </definition>
 <definition extends="default" name="sortpriceratetablemaps/show">
@@ -12,5 +12,18 @@
     </definition>
 <definition extends="default" name="sortpriceratetablemaps/update">
         <put-attribute name="body" value="/WEB-INF/views/sortpriceratetablemaps/update.jspx"/>
+    </definition> -->
+    
+    <definition extends="lte" name="sortpriceratetablemaps/list">
+        <put-attribute name="body" value="/WEB-INF/views/sortpriceratetablemaps/list.jsp"/>
+    </definition>
+<definition extends="lte" name="sortpriceratetablemaps/show">
+        <put-attribute name="body" value="/WEB-INF/views/sortpriceratetablemaps/show.jsp"/>
+    </definition>
+<definition extends="lte" name="sortpriceratetablemaps/create">
+        <put-attribute name="body" value="/WEB-INF/views/sortpriceratetablemaps/create.jsp"/>
+    </definition>
+<definition extends="lte" name="sortpriceratetablemaps/update">
+        <put-attribute name="body" value="/WEB-INF/views/sortpriceratetablemaps/update.jsp"/>
     </definition>
 </tiles-definitions>

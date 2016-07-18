@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
 <tiles-definitions>
-    <definition extends="default" name="reserveinfoes/list">
+    <!-- <definition extends="default" name="reserveinfoes/list">
         <put-attribute name="body" value="/WEB-INF/views/reserveinfoes/list.jspx"/>
     </definition>
 <definition extends="default" name="reserveinfoes/show">
@@ -12,5 +12,18 @@
     </definition>
 <definition extends="default" name="reserveinfoes/update">
         <put-attribute name="body" value="/WEB-INF/views/reserveinfoes/update.jspx"/>
+    </definition> -->
+    
+    <definition extends="lte" name="reserveinfoes/list">
+        <put-attribute name="body" value="/WEB-INF/views/reserveinfoes/list.jsp"/>
+    </definition>
+<definition extends="lte" name="reserveinfoes/show">
+        <put-attribute name="body" value="/WEB-INF/views/reserveinfoes/show.jsp"/>
+    </definition>
+<definition extends="lte" name="reserveinfoes/create">
+        <put-attribute name="body" value="/WEB-INF/views/reserveinfoes/create.jsp"/>
+    </definition>
+<definition extends="lte" name="reserveinfoes/update">
+        <put-attribute name="body" value="/WEB-INF/views/reserveinfoes/update.jsp"/>
     </definition>
 </tiles-definitions>

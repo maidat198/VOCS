@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
 <tiles-definitions>
-    <definition extends="default" name="offers/list">
+
+    <!-- <definition extends="default" name="offers/list">
         <put-attribute name="body" value="/WEB-INF/views/offers/list.jspx"/>
     </definition>
 <definition extends="default" name="offers/show">
@@ -12,5 +13,18 @@
     </definition>
 <definition extends="default" name="offers/update">
         <put-attribute name="body" value="/WEB-INF/views/offers/update.jspx"/>
+    </definition> -->
+    
+    <definition extends="lte" name="offers/list">
+        <put-attribute name="body" value="/WEB-INF/views/offers/list.jsp"/>
+    </definition>
+<definition extends="lte" name="offers/show">
+        <put-attribute name="body" value="/WEB-INF/views/offers/show.jsp"/>
+    </definition>
+<definition extends="lte" name="offers/create">
+        <put-attribute name="body" value="/WEB-INF/views/offers/create.jsp"/>
+    </definition>
+<definition extends="lte" name="offers/update">
+        <put-attribute name="body" value="/WEB-INF/views/offers/update.jsp"/>
     </definition>
 </tiles-definitions>
