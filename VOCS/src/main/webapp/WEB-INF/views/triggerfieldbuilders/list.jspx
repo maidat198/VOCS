@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_nw_domain_TriggerFieldBuilder" items="${triggerfieldbuilders}" z="/9uGXmZknieYezP7YN09vh9qCRU=">
+        <table:table data="${triggerfieldbuilders}" id="l_com_nw_domain_TriggerFieldBuilder" path="/triggerfieldbuilders" typeIdFieldName="fieldBuilderId" z="GW/Tid1EBWsWGKeCkexmIQWIazE=">
+            <table:column id="c_com_nw_domain_TriggerFieldBuilder_field_name" property="field_name" z="ZvllJu9qMNW5KiQ7zEPqMkxTrOQ="/>
+            <table:column id="c_com_nw_domain_TriggerFieldBuilder_processFunction" property="processFunction" z="gHRfHjpfcF0vfczXgw4nTR3iRA4="/>
+            <table:column id="c_com_nw_domain_TriggerFieldBuilder_formatTemplateId" property="formatTemplateId" z="sYrPfFD80qGuKeZZv+IoL60iBZA="/>
+            <table:column id="c_com_nw_domain_TriggerFieldBuilder_langId" property="langId" z="is8hYJXZdaq+EVT7snvJNO4FtMY="/>
+            <table:column id="c_com_nw_domain_TriggerFieldBuilder_status" property="status" z="lpcuAiVrhyV12YwnXDzAv+pQGv4="/>
+        </table:table>
+    </page:list>
+</div>

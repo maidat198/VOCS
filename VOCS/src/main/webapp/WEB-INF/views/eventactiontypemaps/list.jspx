@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_nw_domain_EventActionTypeMap" items="${eventactiontypemaps}" z="xfCLx/oD7A89zOOejV5ZybWYC9I=">
+        <table:table data="${eventactiontypemaps}" id="l_com_nw_domain_EventActionTypeMap" path="/eventactiontypemaps" typeIdFieldName="eventActionTypeMapId" z="5lQ3FzVM7EOGztPMPmRHOj7vv4c=">
+            <table:column id="c_com_nw_domain_EventActionTypeMap_eventId" property="eventId" z="HQnzfGfLrSGGXxUxkpDjwY4g828="/>
+            <table:column id="c_com_nw_domain_EventActionTypeMap_actionTypeId" property="actionTypeId" z="FwVcrKaK4CeYoFbHdo0UQNKJcv8="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_nw_domain_BalType" idField="balTypeId" modelAttribute="balType" path="/baltypes" versionField="Version" z="SrbD6S2XRhSR2fCyB02I2rqEpyA=">
+        <field:input field="balTypeName" id="c_com_nw_domain_BalType_balTypeName" z="94EwjyugGyYEsJKgivFg8lqybiw="/>
+        <field:input field="description" id="c_com_nw_domain_BalType_description" z="V83lhU/feavTF0DsUiHHtKX7ISo="/>
+        <field:input field="externalId" id="c_com_nw_domain_BalType_externalId" validationMessageCode="field_invalid_integer" z="hVpKPjGcSmngso6ZwV8tIXuS0ko="/>
+        <field:input field="balTypeType" id="c_com_nw_domain_BalType_balTypeType" validationMessageCode="field_invalid_integer" z="TmZnkt4umd6IqpWC2eeHBLYwKwE="/>
+        <field:input field="categoryId" id="c_com_nw_domain_BalType_categoryId" validationMessageCode="field_invalid_integer" z="I/vLwK/umMLiec7liZQdufWGlnA="/>
+        <field:input field="paymentType" id="c_com_nw_domain_BalType_paymentType" z="xQYRXUSMvz2k0WX15ZcZppzSvfM="/>
+        <field:input field="isCurrency" id="c_com_nw_domain_BalType_isCurrency" z="0CNJ53vPDadtYSwQBJ9ICxahynk="/>
+        <field:input field="percision" id="c_com_nw_domain_BalType_percision" validationMessageCode="field_invalid_integer" z="4lARH6CeAGYBrtWgVeuQR1+hX6M="/>
+        <field:input field="effDateType" id="c_com_nw_domain_BalType_effDateType" validationMessageCode="field_invalid_integer" z="zKuiEc3bZiaOKqZ9ysfpxB5nl7U="/>
+        <field:datetime dateTimePattern="${balType_effdate_date_format}" field="effDate" id="c_com_nw_domain_BalType_effDate" z="rmi0CZDYOCN8/adzAW+zazbhDS0="/>
+        <field:input field="expDateType" id="c_com_nw_domain_BalType_expDateType" validationMessageCode="field_invalid_integer" z="a8dmCEy92UPGtl/jy5gbFIRMrQM="/>
+        <field:datetime dateTimePattern="${balType_expdate_date_format}" field="expDate" id="c_com_nw_domain_BalType_expDate" z="xeyQqGIJgdpa6bNTZ5edz+MOksU="/>
+        <field:input field="recurringType" id="c_com_nw_domain_BalType_recurringType" validationMessageCode="field_invalid_integer" z="IAkGCAFUE6a2SNau4oKoRzpEKTk="/>
+        <field:input field="recurringPeriod" id="c_com_nw_domain_BalType_recurringPeriod" validationMessageCode="field_invalid_integer" z="jH8DMafpqyakdC/V4u3JCuxrL+g="/>
+        <field:checkbox field="isAcm" id="c_com_nw_domain_BalType_isAcm" z="znit/y870wqhRlp5hspE+AOUWXE="/>
+        <field:select field="unitTypeId" id="c_com_nw_domain_BalType_unitTypeId" itemValue="unitTypeId" items="${unittypes}" path="/unittypes" z="j+qFrXoZ/KtotszV7y6H1fTo3kA="/>
+        <field:input field="periodicPeriodType" id="c_com_nw_domain_BalType_periodicPeriodType" validationMessageCode="field_invalid_integer" z="RH3KcKNw52dDfE+N9sXmjmMxppw="/>
+        <field:input field="periodicPeriod" id="c_com_nw_domain_BalType_periodicPeriod" validationMessageCode="field_invalid_integer" z="z4/nutD+mtFQ4a+SxQfhnmMTcx0="/>
+        <field:input field="windowSize" id="c_com_nw_domain_BalType_windowSize" validationMessageCode="field_invalid_integer" z="nkWA5kvkc3hlwTonibgrRJNdj4U="/>
+        <field:input field="lowWaterMarkLevel" id="c_com_nw_domain_BalType_lowWaterMarkLevel" validationMessageCode="field_invalid_integer" z="Qv/jf+auzeY6qKrtIGnco+AErAk="/>
+        <field:input field="highWatermarkLevel" id="c_com_nw_domain_BalType_highWatermarkLevel" validationMessageCode="field_invalid_integer" z="txFjxS3mbvMngUJsUcsv5rPBwqY="/>
+        <field:select field="billingCycleTypeId" id="c_com_nw_domain_BalType_billingCycleTypeId" itemValue="billingCycleTypeId" items="${billingcycletypes}" path="/billingcycletypes" z="NehzFmypAJoQ6nk1nzAvxZq+Sfw="/>
+    </form:update>
+</div>

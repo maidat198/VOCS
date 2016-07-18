@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_nw_domain_BillingCycleType" object="${billingcycletype}" path="/billingcycletypes" z="z8wlvBgVb+Z7tFIOUGx55XF4KPQ=">
+        <field:display field="billingCycleTypeName" id="s_com_nw_domain_BillingCycleType_billingCycleTypeName" object="${billingcycletype}" z="5JatNpnH4XHrgeONkcqRRzYU2zY="/>
+        <field:display field="quantity" id="s_com_nw_domain_BillingCycleType_quantity" object="${billingcycletype}" z="fKfeIZVk6U6d5/KTag1wAmgTgJM="/>
+        <field:display date="true" dateTimePattern="${billingCycleType_begindate_date_format}" field="beginDate" id="s_com_nw_domain_BillingCycleType_beginDate" object="${billingcycletype}" z="f41FVvsCFWioDfXP2nBBBimUrro="/>
+        <field:display field="remark" id="s_com_nw_domain_BillingCycleType_remark" object="${billingcycletype}" z="y35MLoBlm4ceGSfxX0lvzGG4qwU="/>
+        <field:display field="calcUnitId" id="s_com_nw_domain_BillingCycleType_calcUnitId" object="${billingcycletype}" z="m/4rKTy77owxSJYYzYy0wZEEw5Q="/>
+    </page:show>
+</div>

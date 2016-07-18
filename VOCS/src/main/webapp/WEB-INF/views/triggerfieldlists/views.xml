@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="triggerfieldlists/list">
+        <put-attribute name="body" value="/WEB-INF/views/triggerfieldlists/list.jspx"/>
+    </definition>
+<definition extends="default" name="triggerfieldlists/show">
+        <put-attribute name="body" value="/WEB-INF/views/triggerfieldlists/show.jspx"/>
+    </definition>
+<definition extends="default" name="triggerfieldlists/create">
+        <put-attribute name="body" value="/WEB-INF/views/triggerfieldlists/create.jspx"/>
+    </definition>
+<definition extends="default" name="triggerfieldlists/update">
+        <put-attribute name="body" value="/WEB-INF/views/triggerfieldlists/update.jspx"/>
+    </definition>
+</tiles-definitions>

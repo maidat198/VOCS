@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_nw_domain_UnitType" object="${unittype}" path="/unittypes" z="k8osbCPRb9Vo3RqUeoL1Ep22TPc=">
+        <field:display field="name" id="s_com_nw_domain_UnitType_name" object="${unittype}" z="f8cHDN4lU/8q7LlzXPlTEqmS4DM="/>
+        <field:display field="precisions" id="s_com_nw_domain_UnitType_precisions" object="${unittype}" z="4AqQbPu+Tet5aLsYJP8OI3BbJU8="/>
+        <field:display field="baseRate" id="s_com_nw_domain_UnitType_baseRate" object="${unittype}" z="nPTozPEeQ5D8gSk3+j4RAn1si6I="/>
+        <field:display field="displayRate" id="s_com_nw_domain_UnitType_displayRate" object="${unittype}" z="VFBW88fIavRJQL4PrgaUBJ044o8="/>
+        <field:display field="remark" id="s_com_nw_domain_UnitType_remark" object="${unittype}" z="d+7b96DzEjYQs7PlKYr6lYjS8Vk="/>
+    </page:show>
+</div>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_nw_domain_Zones" items="${zoneses}" z="pZDH+xvEXhQhBCherhH26MJtq08=">
+        <table:table data="${zoneses}" id="l_com_nw_domain_Zones" path="/zoneses" typeIdFieldName="zoneId" z="N8y1/mXwi1BSP1PZDsjQHcMwr/8=">
+            <table:column id="c_com_nw_domain_Zones_zoneName" property="zoneName" z="oA4h45SJv+oc/9rWmDv0gXmMTxY="/>
+            <table:column id="c_com_nw_domain_Zones_zoneCode" property="zoneCode" z="PNC3F/W/5gBWMl+brrw2mvc2uEk="/>
+            <table:column id="c_com_nw_domain_Zones_remark" property="remark" z="IotbIc63RWkooMmsq5qCkhBxAYI="/>
+            <table:column id="c_com_nw_domain_Zones_zoneMapId" property="zoneMapId" z="bm4v++HDkTuxB17ZNUOFsdJRk/A="/>
+        </table:table>
+    </page:list>
+</div>

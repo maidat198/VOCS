@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_nw_domain_Threshold" items="${thresholds}" z="AP+d4tp/X9/bJ10qjsX5EI1uT7k=">
+        <table:table data="${thresholds}" id="l_com_nw_domain_Threshold" path="/thresholds" typeIdFieldName="thresholdId" z="nRYjlxwxiFScn2hBzTcV/W56lo0=">
+            <table:column id="c_com_nw_domain_Threshold_isPercentage" property="isPercentage" z="u76heqbhsDokX/I+cBWSwkOo//w="/>
+            <table:column id="c_com_nw_domain_Threshold_thresholdType" property="thresholdType" z="Jtb/zPbuhVTDYgMKxnohg3HAKvY="/>
+            <table:column id="c_com_nw_domain_Threshold_thresValue" property="thresValue" z="Q9d9hEbaqFM32UMD6G0IAOd42cE="/>
+            <table:column id="c_com_nw_domain_Threshold_thresholdName" property="thresholdName" z="jzxHG+5Pm7Hx23i0HaiOMcX7R2Q="/>
+            <table:column id="c_com_nw_domain_Threshold_externalId" property="externalId" z="uDqwZU9KWqnWcpSiyI5rlto5+SE="/>
+            <table:column id="c_com_nw_domain_Threshold_triggerId" property="triggerId" z="6+LH0ca9MMNoFIr0AAH0p7SN4EY="/>
+        </table:table>
+    </page:list>
+</div>

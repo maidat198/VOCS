@@ -1,0 +1,339 @@
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-07-13 11:59:05
+project --topLevelPackage com.nw --projectName VOCS --java 6 --packaging JAR
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log closed at 2016-07-13 11:59:21
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-07-13 11:59:27
+jpa setup --database MYSQL --provider HIBERNATE --databaseName vocs --userName vocs --password vocs
+entity jpa --class ~.domain.TriggerEventType --table trigger_event_type --identifierColumn trigger_event_type --identifierField trigger_event_type --identifierType java.lang.Long --sequenceName seq_trigger_event_type
+field string --fieldName eventName --column event_name --notNull
+field string --fieldName eventDescription --column event_description
+field string --fieldName protocol --column protocol --notNull 
+entity jpa --class ~.domain.TriggerDestination --table trigger_destination --identifierColumn destination_id --identifierField destinationId --identifierType java.lang.Long --sequenceName seq_trigger_destination
+entity jpa --class ~.domain.TriggerType --table trigger_type --identifierColumn trigger_type --identifierField triggerType --identifierType java.lang.Long --sequenceName seq_trigger_type
+entity jpa --class ~.domain.TriggerOCS --table trigger_ocs --identifierColumn trigger_ocs_id --identifierField triggerOcsId --identifierType java.lang.Long --sequenceName seq_trigger_ocs
+field string --fieldName triggerName --column trigger_name
+field number --fieldName status --type java.lang.Integer --column status
+field string --fieldName description
+entity jpa --class ~.domain.TriggerEvent --table trigger_event --identifierColumn trigger_event_id --identifierField triggerEventId --identifierType java.lang.Long --sequenceName seq_trigger_event
+field string --fieldName trigger_event_name
+field number --fieldName status --type java.lang.Integer
+field number --fieldName delay_process --type java.lang.Integer
+field reference --fieldName destination_id --type ~.domain.TriggerDestination --cardinality MANY_TO_ONE --joinColumnName destination_id
+field reference --fieldName triggerOcsId --type ~.domain.TriggerOCS --cardinality MANY_TO_ONE --joinColumnName trigger_ocs_id --notNull 
+field reference --fieldName trigger_event_type --type ~.domain.TriggerEventType --cardinality MANY_TO_ONE --joinColumnName trigger_event_type
+entity jpa --class ~.domain.TriggerMsg --table trigger_msg --identifierColumn msg_id --identifierField msgId --identifierType java.lang.Long --sequenceName seq_trigger_msg
+field string --fieldName msgName --column msg_name --notNull 
+field string --fieldName msgDesc --column msg_desc
+field number --fieldName status --type java.lang.Integer
+field reference --fieldName triggerEventId --type ~.domain.TriggerEvent --cardinality MANY_TO_ONE --joinColumnName trigger_event_id
+entity jpa --class ~.domain.TriggerFieldBuilder --table trigger_field_builder --identifierColumn field_builder_id --identifierField fieldBuilderId --identifierType java.lang.Long --sequenceName seq_trigger_field_builder
+field string --fieldName field_name --notNull 
+field string --fieldName processFunction --column process_function
+field number --fieldName formatTemplateId --column format_template_id --type java.lang.Integer
+field number --fieldName langId --column lang_id --type java.lang.Integer
+field number --fieldName status --type java.lang.Integer
+entity jpa --class ~.domain.TriggerMsgField --table trigger_msg_field --identifierColumn msg_field_id --identifierField msgFieldId --identifierType java.lang.Long --sequenceName seq_trigger_msg_field
+field reference --fieldName msg_id --type ~.domain.TriggerMsg --cardinality MANY_TO_ONE --joinColumnName msg_id
+field reference --fieldName fieldBuilderId --type ~.domain.TriggerFieldBuilder --cardinality MANY_TO_ONE --joinColumnName field_builder_id
+field number --fieldName msgOrder --column msg_order --type java.lang.Integer
+field number --fieldName msgStatus --column msg_status --type java.lang.Integer
+entity jpa --class ~.domain.TriggerFieldList --table trigger_field_list --sequenceName seq_trigger_field_list --identifierColumn field_builder_id --identifierField fieldBuilderId --identifierType java.lang.Long
+focus --class ~.domain.TriggerDestination
+focus --class ~.domain.TriggerFieldList
+field string --fieldName fieldName --column field_name --notNull
+field number --fieldName fieldOrder --column field_order --type java.lang.Integer
+field number --fieldName fieldFormat --column field_format --type java.lang.Integer
+field reference --fieldName fieldBuilderId --type ~.domain.TriggerFieldBuilder --cardinality MANY_TO_ONE --joinColumnName field_builder_id
+focus --class ~.domain.TriggerType
+field string --fieldName triggeTypeName --column trigger_type_name 
+field string --fieldName triggerTypeDescription --column trigger_type_description
+focus --class ~.domain.TriggerDestination
+field string --fieldName destName --column dest_name --notNull 
+field string --fieldName destDescription --column dest_description
+field number --fieldName status --type java.lang.Integer
+entity jpa --class ~.domain.Category --table category --sequenceName seq_category --identifierColumn category_id --identifierField categoryId --identifierType java.lang.Long
+field number --fieldName categoryType --column category_type --type java.lang.Integer
+field string --fieldName categoryName --column category_name
+field number --fieldName categoryParentId --column category_parent_id --type java.lang.Integer
+entity jpa --class ~.domain.CalcUnit --table calc_unit --sequenceName seq_calc_unit --identifierColumn calc_unit_id --identifierField calcUnitId --identifierType java.lang.Long
+field string --fieldName calcUnitName --column calc_unit_name
+field number --fieldName calcUnitType --column calc_unit_type --type java.lang.Integer
+// [failed] entity jpa --class ~.domain.Action --table action --sequenceName seq_action --identifierColumn action_id --identifierField actionId --identifierType java.lang.Long
+// [failed] entity jpa --class ~.domain.Action --table actions --sequenceName seq_action --identifierColumn action_id --identifierField actionId --identifierType java.lang.Long
+entity jpa --class ~.domain.Actions --table action --sequenceName seq_action --identifierColumn action_id --identifierField actionId --identifierType java.lang.Long
+field string --fieldName actionName --column action_name
+field number --fieldName actionType --column action_type --type java.lang.Integer
+field number --fieldName category_id --type java.lang.Integer --column category_id
+field number --fieldName sortPriceComponentId --type java.lang.Integer --column sort_price_component_id
+field number --fieldName dynamicReserveId --column dynamic_reserve_id --type java.lang.Integer
+entity jpa --class ~.domain.ActionType --table action_type --sequenceName seq_action_type --identifierColumn action_type_id --identifierField actionTypeId --identifierType java.lang.Long
+field string --fieldName actionTypeName --column action_type_name
+field reference --fieldName categoryId --type ~.domain.Category --cardinality ONE_TO_ONE --joinColumnName category_id
+entity jpa --class ~.domain.Event --table event --sequenceName seq_event --identifierColumn event_id --identifierField eventId --identifierType java.lang.Long
+field string --fieldName eventName --column event_name
+field string --fieldName description
+field boolean --fieldName isRequireReserveInfo --column is_require_reserve_info --value 0
+field number --fieldName eventType --column event_type --type java.lang.Integer
+entity jpa --class ~.domain.EventActionMap --table event_action_map --identifierColumn event_action_map_id --identifierField eventActionMapId --identifierType java.lang.Long
+field reference --fieldName eventId --type ~.domain.Event --cardinality MANY_TO_ONE --joinColumnName event_id
+field reference --fieldName actionId --type ~.domain.Actions --cardinality MANY_TO_ONE --joinColumnName action_id
+entity jpa --class ~.domain.EventActionTypeMap --table event_action_type_map --sequenceName seq_event_action_type_map --identifierColumn event_action_type_map_id --identifierField eventActionTypeMapId --identifierType java.lang.Long
+field reference --fieldName eventId --type ~.domain.Event --cardinality MANY_TO_ONE --joinColumnName event_id
+field reference --fieldName actionTypeId --type ~.domain.ActionType --cardinality MANY_TO_ONE --joinColumnName action_type_id
+entity jpa --class ~.domain.NormParam --table norm_param --sequenceName seq_norm_param --identifierColumn norm_param_id --identifierField normParamId --identifierType java.lang.Long
+field string --fieldName configInput --column config_input
+field number --fieldName normParamIndex --column norm_param_index --type java.lang.Integer
+entity jpa --class ~.domain.Formula --table formula --sequenceName seq_formula --identifierColumn formula_id --identifierField formulaId --identifierType java.lang.Long
+field number --fieldName formulaType --type java.lang.Integer --column formula_type
+field number --fieldName a --type java.lang.Integer --column a
+field number --fieldName b --type java.lang.Integer --column b
+field number --fieldName per --type java.lang.Integer --column per
+field reference --fieldName categoryId --type ~.domain.Category --cardinality MANY_TO_ONE --joinColumnName category_id
+field reference --fieldName triggerOcsId --type ~.domain.TriggerOCS --cardinality MANY_TO_ONE --joinColumnName trigger_ocs_id
+field boolean --fieldName isPercentage --column is_percentage --value 0
+field number --fieldName templateBits --column template_bits --type java.lang.Integer
+field number --fieldName normalizingValueType --column normalizing_value_type --type java.lang.Integer
+field number --fieldName formulaErrorCode --type java.lang.Integer --column formula_error_code
+entity jpa --class ~.domain.GeoHomeZone --table geo_home_zone --sequenceName  seq_geo_home_zone --identifierColumn geo_home_zone_id --identifierField geoHomeZoneId --identifierType java.lang.Long
+field string --fieldName geoHomeZoneName --column geo_home_zone_name
+field string --fieldName geoHomeZoneCode --column geo_home_zone_code
+field string --fieldName remark --column remark
+field number --fieldName geoHomeZoneType --type java.lang.Integer --column geo_home_zone_type
+entity jpa --class ~.domain.GeoNetZone --table geo_net_zone --sequenceName seq_geo_net_zone --identifierColumn geo_net_zone_id --identifierField geoNetZoneId --identifierType java.lang.Long
+field number --fieldName cellId --type java.lang.Integer --column cell_id 
+field reference --fieldName geoHomeZoneId --type ~.domain.GeoHomeZone --cardinality MANY_TO_ONE --joinColumnName geo_home_zone_id
+field date --fieldName updateDate --type java.util.Date
+entity jpa --class ~.domain.BillingCycleType --table billing_cycle_type --sequenceName seq_billing_cycle_type --identifierColumn billing_cycle_type_id --identifierField billingCycleTypeId --identifierType java.lang.Long
+field string --fieldName billingCycleTypeName --column billing_cycle_type_name
+field number --fieldName quantity --type java.lang.Integer --column quantity
+field date --fieldName beginDate --type java.util.Date --dateFormat SHORT 
+field string --fieldName remark --column remark
+field reference --fieldName calcUnitId --type ~.domain.CalcUnit --cardinality MANY_TO_ONE --joinColumnName calc_unit_id
+entity jpa --class ~.domain.BillingCycle --table billing_cycle --sequenceName seq_billing_cycle --identifierColumn billing_cycle_id --identifierField billingCycleId --identifierType java.lang.Long
+field reference --fieldName billingCycleTypeId --type ~.domain.BillingCycleType --cardinality MANY_TO_ONE --joinColumnName billing_cycle_type_id
+field date --fieldName cycleBeginDate --type java.util.Date --dateFormat SHORT 
+field date --fieldName cycleEndDate --type java.util.Date --dateFormat SHORT 
+// [failed] field number --fieldName state --type java.lang.Integer
+field number --fieldName states --type java.lang.Integer
+entity jpa --class ~.domain.PriceComponent --table price_component --sequenceName seq_price_component --identifierColumn price_component_id --identifierField priceComponentId --identifierType java.lang.Long
+field string --fieldName priceComponentName --column price_component_name
+field reference --fieldName categoryId --type ~.domain.Category --cardinality MANY_TO_ONE --joinColumnName category_id
+entity jpa --class ~.domain.ActionPriceComponentMap --table action_price_component_map --identifierColumn action_price_component_map_id --identifierField actionPriceComponentMapId --identifierType java.lang.Long
+field reference --fieldName actionId --type ~.domain.Actions --cardinality MANY_TO_ONE --joinColumnName action_id
+field reference --fieldName priceComponentId --type ~.domain.PriceComponent --cardinality MANY_TO_ONE --joinColumnName price_component_id
+field number --fieldName pcIndex --column pc_index --type java.lang.Integer
+entity jpa --class ~.domain.Block --table block --sequenceName seq_block --identifierColumn block_id --identifierField blockId --identifierType java.lang.Long
+field number --fieldName blockType --column block_type --type java.lang.Integer
+field reference --fieldName categoryId --type ~.domain.Category --cardinality MANY_TO_ONE --joinColumnName category_id
+field string --fieldName blockName --column block_name
+field boolean --fieldName isUseSpecialMethod --column is_use_special_method --value 0
+field boolean --fieldName isCreateNewBalance --column is_create_new_balance --value 0
+field number --fieldName affectedObjType --type java.lang.Integer
+field number --fieldName affectedValue --column affected_value --type java.lang.Integer
+field string --fieldName affectedField --column affected_field
+entity jpa --class ~.domain.RateTableResult --table rate_table_result --sequenceName seq_rate_table_result --identifierColumn rate_table_result_id --identifierField rateTableResultId --identifierType java.lang.Long
+field number --fieldName rowIndex --column row_index --type java.lang.Integer
+field reference --fieldName formulaId --type ~.domain.Formula --cardinality MANY_TO_ONE --joinColumnName formula_id
+entity jpa --class ~.domain.ReserveInfo --table reserve_info --sequenceName seq_reserve_info --identifierColumn reserve_info_id --identifierField reserveInfoId --identifierType java.lang.Long
+field number --fieldName maxReserve --column max_reserve --type java.lang.Integer
+field number --fieldName minReserve --type java.lang.Integer --column min_reserve
+field number --fieldName usageQuotaThreshold --column usage_quota_threshold --type java.lang.Integer
+entity jpa --class ~.domain.ReserveInfoActionMap --table reserve_info_action_map --sequenceName seq_reserve_info_action_map --identifierColumn reserve_info_action_map_id --identifierField reserveActionMapId --identifierType java.lang.Long
+field reference --fieldName reserveInfoId --type ~.domain.ReserveInfo --joinColumnName reserve_info_id
+field reference --fieldName actionId --type ~.domain.Actions --joinColumnName action_id
+entity jpa --class ~.domain.RowDT --table row_dt --sequenceName seq_row_dt --identifierColumn row_id --identifierField rowId --identifierType java.lang.Long
+// [failed] field string --fieldName value
+// [failed] field string --fieldName values
+field string --fieldName rowValue --column value
+field number --fieldName rowIndex --column row_index --type java.lang.Integer
+entity jpa --class ~.domain.RowOCS --table row_ocs --sequenceName seq_row_ocs --identifierColumn row_ocs_id --identifierField rowOcsId --identifierType java.lang.Long
+field number --fieldName rowIndexId --type java.lang.Integer
+entity jpa --class ~.domain.SortPriceComponent --table sort_price_component --sequenceName seq_sort_price_component --identifierColumn sort_price_component_id --identifierField sortPriceComponentId --identifierType java.lang.Long
+field string --fieldName sortPriceComponentName --column sort_price_component_name
+field reference --fieldName categoryId --type ~.domain.Category --joinColumnName category_id
+focus --class ~.domain.TriggerDestination
+field reference --fieldName categoryId --type ~.domain.Category --joinColumnName category_id
+focus --class ~.domain.TriggerOCS
+field reference --fieldName categoryId --type ~.domain.Category --joinColumnName category_id
+focus --class ~.domain.TriggerEvent
+field reference --fieldName categoryId --type ~.domain.Category --joinColumnName category_id
+entity jpa --class ~.domain.ZoneMap --table zone_map --sequenceName seq_zone_map --identifierColumn zone_map_id --identifierField zoneMapId --identifierType java.lang.Long
+field string --fieldName zoneMapName --column zone_map_name
+field string --fieldName remark
+entity jpa --class ~.domain.ZoneData --table zone_data --sequenceName seq_zone_data --identifierColumn zone_data_id --identifierField zoneDataId --identifierType java.lang.Long
+field string --fieldName zoneDataValue --column zone_data_value
+// [failed] entity jpa --class ~.domain.Zone --table zone --sequenceName seq_zone --identifierColumn zone_id --identifierField zoneId --identifierType java.lang.Long
+// [failed] entity jpa --class ~.domain.Zone --table zones --sequenceName seq_zone --identifierColumn zone_id --identifierField zoneId --identifierType java.lang.Long
+entity jpa --class ~.domain.Zones --table zone --sequenceName seq_zone --identifierColumn zone_id --identifierField zoneId --identifierType java.lang.Long
+field string --fieldName zoneName --column zone_name
+field string --fieldName zoneCode --column zone_code
+field string --fieldName remark --column remark
+field reference --fieldName zoneMapId --type ~.domain.ZoneMap --joinColumnName zone_map_id
+focus --class ~.domain.ZoneData
+field reference --fieldName zoneId --type ~.domain.Zones --joinColumnName zone_id
+entity jpa --class ~.domain.UnitType --table unit_type --sequenceName seq_unit_type --identifierColumn unit_type_id --identifierField unitTypeId --identifierType java.lang.Long
+field string --fieldName name --column name
+// [failed] field number --fieldName precision --type java.lang.Integer
+field number --fieldName precisions --type java.lang.Integer --column precision
+field number --fieldName baseRate --column base_rate --type java.lang.Integer
+field number --fieldName displayRate --column display_rate --type java.lang.Integer
+field string --fieldName remark
+entity jpa --class ~.domain.Threshold --table threshold --sequenceName seq_threshold --identifierColumn threshold_id --identifierField thresholdId --identifierType java.lang.Long
+field boolean --fieldName isPercentage --column is_percentage --value 0
+field number --fieldName thresholdType --column threshold_type --type java.lang.Integer
+// [failed] field number --fieldName value --type java.lang.Integer
+// [failed] field number --fieldName values --column value --type java.lang.Integer
+field number --fieldName thresValue --column value --type java.lang.Integer
+field string --fieldName thresholdName
+field number --fieldName externalId --column external_id --type java.lang.Integer
+field number --fieldName triggerId --column trigger_id --type java.lang.Integer
+entity jpa --class ~.domain.TriggerFieldFormat --table trigger_field_format --sequenceName seq_trigger_field_format --identifierColumn format_template_id --identifierField formatTemplateId --identifierType java.lang.Long
+field number --fieldName langId --column lang_id --type java.lang.Integer
+field string --fieldName text --column text
+field number --fieldName formatType --column format_type --type java.lang.Integer
+entity jpa --class ~.domain.RateTable --table rate_table --sequenceName seq_rate_table --identifierColumn rate_table_id --identifierField rateTableId --identifierType java.lang.Long
+field string --fieldName rateTableName --column rate_table_name
+field reference --fieldName categoryId --type ~.domain.Category --joinColumnName category_id
+field date --fieldName effDate --type java.util.Date
+field date --fieldName expDate --type java.util.Date --column exp_date
+field string --fieldName remark
+// [failed] field number --fieldName state --type java.lang.Integer
+field number --fieldName rateTableState --type java.lang.Integer --column state
+field number --fieldName externalId --type java.lang.Integer --column external_id
+field number --fieldName ratingValue --type java.lang.Integer
+field number --fieldName formulaId --column formula_id --type java.lang.Long
+field number --fieldName defaultFormulaId --column default_formula_id --type java.lang.Long
+entity jpa --class ~.domain.DecisionTable --table decision_table --sequenceName seq_decision_table --identifierColumn decision_table_id --identifierField decisionTableId --identifierType java.lang.Long
+field string --fieldName decisionTableName --column decision_table_name
+field number --fieldName defaultFormulaIndex --column default_formula_index --type java.lang.Integer
+field string --fieldName remark
+field reference --fieldName categoryId --type ~.domain.Category --joinColumnName category_id
+focus --class ~.domain.RateTable
+field reference --fieldName decisionTableId --type ~.domain.DecisionTable --joinColumnName decision_table_id
+entity jpa --class ~.domain.BalType --table bal_type --sequenceName seq_bal_type --identifierColumn bal_type_id --identifierField balTypeId --identifierType java.lang.Long
+field string --fieldName balTypeName --column bal_type_name
+field string --fieldName description --column description
+field number --fieldName externalId --column external_id --type java.lang.Integer
+field number --fieldName balTypeType --column bal_type_type --type java.lang.Integer
+field number --fieldName categoryId --column category_id --type java.lang.Long
+field string --fieldName paymentType --column payment_type
+field string --fieldName isCurrency --column is_currency
+field number --fieldName percision --column percision --type java.lang.Integer
+field number --fieldName effDateType --type java.lang.Integer --column eff_date_type
+field date --fieldName effDate --column eff_date --type java.util.Date
+field number --fieldName expDateType --column exp_date_type --type java.lang.Integer
+field date --fieldName expDate --column exp_date --type java.util.Date
+field number --fieldName recurringType --column recurring_type --type java.lang.Integer
+field number --fieldName recurringPeriod --type java.lang.Integer --column recurring_period
+field boolean --fieldName isAcm --column is_acm --value 0
+field reference --fieldName unitTypeId --type ~.domain.UnitType --joinColumnName unit_type_id
+field number --fieldName periodicPeriodType --column periodic_period_type --type java.lang.Integer
+field number --fieldName periodicPeriod --type java.lang.Integer --column periodic_period
+field number --fieldName windowSize --type java.lang.Integer --column window_size
+field number --fieldName lowWaterMarkLevel --column low_water_mark_level --type java.lang.Integer
+field number --fieldName highWatermarkLevel --column high_watermark_level --type java.lang.Integer
+field reference --fieldName billingCycleTypeId --type ~.domain.BillingCycleType --joinColumnName billing_cycle_type_id
+entity jpa --class ~.domain.BlockRateTableMap --table block_rate_table_map --sequenceName seq_block_rate_table_map --identifierColumn block_table_rate_map_id --identifierField blockTableRateMapId --identifierType java.lang.Long
+field reference --fieldName blockId --type ~.domain.Block --joinColumnName block_id
+field reference --fieldName rateTableId --type ~.domain.RateTable --joinColumnName rate_table_id
+field number --fieldName componentType --column component_type --type java.lang.Integer
+field number --fieldName rateTableIndex --column rate_table_index --type java.lang.Integer
+entity jpa --class ~.domain.AcmBillCycle --table acm_bill_cycle --sequenceName seq_acm_bill_cycle --identifierColumn acm_bill_cycle_key --identifierField acmBillCycleKey --identifierType java.lang.Long
+field number --fieldName acmBillCycleId --column acm_bill_cycle_id --type java.lang.Long
+field reference --fieldName balTypeId --type ~.domain.BalType --joinColumnName bal_type_id
+field reference --fieldName billingCycleTypeId --type ~.domain.BillingCycleType --joinColumnName billing_cycle_type_id
+entity jpa --class ~.domain.ThresholdBalTypeMap --table threshold_baltype_map --sequenceName seq_threshold_baltype_map --identifierColumn threshold_baltype_map_id --identifierField thresholdBaltypeMapId --identifierType java.lang.Long
+field reference --fieldName thresholdId --type ~.domain.Threshold --joinColumnName threshold_id
+field reference --fieldName baltypeId --type ~.domain.BalType --joinColumnName baltype_id
+entity jpa --class ~.domain.ResultRateMap --table result_rate_map --sequenceName seq_result_rate_map --identifierColumn result_rate_map_id --identifierField resultRateMapId --identifierType java.lang.Long
+field reference --fieldName rateTableId --type ~.domain.RateTable --joinColumnName rate_table_id
+field reference --fieldName rateTableResultId --type ~.domain.RateTableResult --joinColumnName rate_table_result_id
+entity jpa --class ~.domain.SortPriceRateTableMap --table sort_price_rate_table_map --sequenceName seq_sort_price_table_map --identifierColumn sort_price_rate_table_map_id --identifierField sortPriceRateTableMapId --identifierType java.lang.Long
+field reference --fieldName sortPriceComponentId --type ~.domain.SortPriceComponent --joinColumnName sort_price_component_id
+field reference --fieldName rateTableId --type ~.domain.RateTable --joinColumnName rate_table_id
+field number --fieldName rateTableIndex --column rate_table_index --type java.lang.Integer
+entity jpa --class ~.domain.RowDecisionTableMap --table row_decision_table_map --sequenceName seq_row_decision_table_map --identifierColumn row_decision_table_map_id --identifierField rowDecisionTableMapId --identifierType java.lang.Long
+field reference --fieldName decisionTableId --type ~.domain.DecisionTable --joinColumnName decision_table_id
+field reference --fieldName rowDTId --type ~.domain.RowDT --joinColumnName row_dt_id
+entity jpa --class ~.domain.PriceRateMap --table price_rate_map --sequenceName seq_price_rate_map --identifierColumn price_rate_map_id --identifierField priceRateMapId --identifierType java.lang.Long
+field reference --fieldName priceComponentId --type ~.domain.PriceComponent --joinColumnName price_component_id
+field reference --fieldName rateTableId --type ~.domain.RateTable --joinColumnName rate_table_id
+entity jpa --class ~.domain.PriceComponentBlockMap --table price_component_block_map --sequenceName seq_price_component_block_map --identifierColumn price_component_block_map_id --identifierField priceComponentBlockMapId --identifierType java.lang.Long
+field reference --fieldName priceComponentId --type ~.domain.PriceComponent --joinColumnName price_component_id
+field reference --fieldName blockId --type ~.domain.Block --joinColumnName block_id
+// [failed] entity jpa --class ~.domain.Parameter --table parameter --sequenceName seq_parameter --identifierColumn parameter_id --identifierField parameterId --identifierType java.lang.Long
+entity jpa --class ~.domain.Parameters --table parameter --sequenceName seq_parameter --identifierColumn parameter_id --identifierField parameterId --identifierType java.lang.Long
+field number --fieldName ownerLevel --type java.lang.Integer
+field string --fieldName parameterValue
+entity jpa --class ~.domain.NormValue --table norm_value --sequenceName seq_norm_value --identifierColumn norm_value_id --identifierField normValueId --identifierType java.lang.Integer
+field string --fieldName valueName --column value_name
+field number --fieldName valueId --type java.lang.Integer --column value_id
+field string --fieldName description --column description
+field number --fieldName normValueIndex --type java.lang.Integer --column norm_value_index
+entity jpa --class ~.domain.Offer --table offer --sequenceName seq_offer --identifierColumn offer_id --identifierField offerId --identifierType java.lang.Long
+field string --fieldName offerName --column offer_name
+field reference --fieldName categoryId --type ~.domain.Category --joinColumnName category_id
+field number --fieldName priority --column priority --type java.lang.Integer
+field date --fieldName effDate --column eff_date --type java.util.Date
+field date --fieldName expDate --column exp_date --type java.util.Date
+field number --fieldName createType --type java.lang.Integer --column create_type
+field number --fieldName offerType --column offer_type --type java.lang.Integer
+field reference --fieldName billingCycleTypeId --type ~.domain.BillingCycleType --joinColumnName billing_cycle_type_id
+field string --fieldName offerExternalId --column offer_external_id 
+field string --fieldName versionInfo --column version_info
+field number --fieldName specialCalMethod --type java.lang.Integer --column special_cal_method
+field number --fieldName offerTemplateId --column offer_template_id --type java.lang.Integer
+field string --fieldName description
+field number --fieldName offerCycle --type java.lang.Integer --column offer_cycle
+entity jpa --class ~.domain.OfferActionMap --table offer_action_map --sequenceName seq_offer_action_map --identifierColumn offer_action_map_id --identifierField offerActionMapId --identifierType java.lang.Long
+field reference --fieldName offerId --type ~.domain.Offer --joinColumnName offer_id
+// [failed] field reference --fieldName actionId --type ~.domain.ActionId --joinColumnName action_id
+field reference --fieldName actionId --type ~.domain.Actions --joinColumnName action_id
+entity jpa --class ~.domain.OfferParameterMap --table offer_parameter_map --sequenceName seq_offer_parameter_map --identifierColumn offer_parameter_map_id --identifierField offerParameterMapId --identifierType java.lang.Long
+field reference --fieldName offerId --type ~.domain.Offer --joinColumnName offer_id
+field reference --fieldName parameterId --type ~.domain.Parameters --joinColumnName parameter_id
+entity jpa --class ~.domain.Normalizer --table normalizer --sequenceName seq_normalizer --identifierColumn normalizer_id --identifierField normalizerId --identifierType java.lang.Long
+field string --fieldName normalizerName --column normalizer_name
+field number --fieldName normalizerType --type java.lang.Integer --column normalizer_type
+// [failed] field number --fieldName state --column state --type java.lang.Integer
+field number --fieldName normalizerState --column state --type java.lang.Integer
+field number --fieldName defaultValue --column default_value --type java.lang.Integer
+field number --fieldName valueIfNull --column value_if_null --type java.lang.Integer
+field string --fieldName inputField
+field string --fieldName specialFields --column special_fields
+field reference --fieldName categoryId --type ~.domain.Category --joinColumnName category_id
+field number --fieldName queryState --column query_state --type java.lang.Integer
+entity jpa --class ~.domain.NormalizerNormValueMap --table normalizer_norm_value_map --sequenceName seq_normalizer_norm_value_map --identifierColumn normalizer_norm_value_map_id --identifierField normalizerNormValueMapId --identifierType java.lang.Long
+field reference --fieldName normalizerId --type ~.domain.Normalizer --joinColumnName normalizer_id
+field reference --fieldName normValueId --type ~.domain.NormValue --joinColumnName norm_value_id
+entity jpa --class ~.domain.NormalizerNormParamMap --table normalizer_norm_param_map --sequenceName seq_normalizer_norm_param_map --identifierColumn normalizer_norm_param_map_id --identifierField normalizerNormParamMapId --identifierType java.lang.Long
+field reference --fieldName normalizerId --type ~.domain.Normalizer --joinColumnName normalizer_id
+field reference --fieldName normParamId --type ~.domain.NormParam --joinColumnName norm_param_id
+entity jpa --class ~.domain.ColumnDT --table column_dt --sequenceName seq_column_dt --identifierColumn column_id --identifierField columnId --identifierType java.lang.Long
+field string --fieldName attribute
+field number --fieldName columnIndex --type java.lang.Integer --column column_index
+field string --fieldName columnName --column column_name
+field reference --fieldName normalizerId --type ~.domain.Normalizer --joinColumnName normalizer_id
+entity jpa --class ~.domain.ColumnDecisionTableMap --table column_decision_table_map --sequenceName seq_column_decision_table_map --identifierColumn column_decision_table_map_id --identifierField columnDecisionTableMapId --identifierType java.lang.Long
+field reference --fieldName decisionTableId --type ~.domain.DecisionTable --joinColumnName decision_table_id
+field reference --fieldName columnDtId --type ~.domain.ColumnDT --joinColumnName column_dt_id
+entity jpa --class ~.domain.DynamicReserve --table dynamic_reserve --sequenceName seq_dynamic_reserve --identifierColumn dynamic_reserve_id --identifierField dynamicReserveId --identifierType java.lang.Long
+field string --fieldName dynamicReserveName
+field reference --fieldName categoryId --type ~.domain.Category --joinColumnName category_id
+entity jpa --class ~.domain.DynamicReserveRateTableMap --table dynamic_reserve_rate_table_map --sequenceName seq_dynamic_reserve_rate_table_map --identifierColumn dynamic_rate_map_id --identifierField dynamicRateMapId --identifierType java.lang.Long
+field reference --fieldName rateTableId --type ~.domain.RateTable --joinColumnName rate_table_id
+field reference --fieldName dynamicReserveId --type ~.domain.DynamicReserve --joinColumnName dynamic_reserve_id
+field number --fieldName rateTableIndex --column rate_table_index --type java.lang.Integer
+entity jpa --class ~.domain.MapACMBalBal --table map_acmbal_bal --sequenceName seq_map_acmbal_bal --identifierColumn acm_baltype_id --identifierField acmbalTypeId --identifierType java.lang.Long
+field reference --fieldName baltypeId --type ~.domain.BalType --joinColumnName baltype_id
+entity jpa --class ~.domain.MapShareBalBal --table map_sharebal_bal --identifierColumn share_baltype_id --identifierField shareBalTypeId --identifierType java.lang.Long
+field reference --fieldName baltypeId --type ~.domain.BalType --joinColumnName baltype_id
+web mvc setup 
+help backup
+hint
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-07-14 21:42:55
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log closed at 2016-07-14 21:51:59
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-07-14 23:24:48
+web mvc all --package ~.web
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log closed at 2016-07-14 23:42:28
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-07-15 14:16:59
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log closed at 2016-07-15 15:03:10

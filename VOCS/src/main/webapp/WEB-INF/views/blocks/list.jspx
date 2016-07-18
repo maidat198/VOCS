@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_nw_domain_Block" items="${blocks}" z="ZxLKd2iJVKJNjFtWaZbzy+WkKCA=">
+        <table:table data="${blocks}" id="l_com_nw_domain_Block" path="/blocks" typeIdFieldName="blockId" z="HD85a+liGKziAmrYsNBvbU5ouE0=">
+            <table:column id="c_com_nw_domain_Block_blockType" property="blockType" z="xcGEfBbZsjn96ZRltti4o+6u18g="/>
+            <table:column id="c_com_nw_domain_Block_categoryId" property="categoryId" z="fEa5lDC23OEbctoPaotS/ijwBHc="/>
+            <table:column id="c_com_nw_domain_Block_blockName" property="blockName" z="nezVQ3LRrNjNIv5mi4h+eYVCQJ0="/>
+            <table:column id="c_com_nw_domain_Block_isUseSpecialMethod" property="isUseSpecialMethod" z="WNpyjOkrYK8b5rEUvZyG4gPAP9M="/>
+            <table:column id="c_com_nw_domain_Block_isCreateNewBalance" property="isCreateNewBalance" z="ZHg+y08MjFBjYvVMziyop18Qzgo="/>
+            <table:column id="c_com_nw_domain_Block_affectedObjType" property="affectedObjType" z="WnRbNC/P4hwZ3+a2Kx9WGHiCJws="/>
+        </table:table>
+    </page:list>
+</div>

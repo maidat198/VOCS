@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_nw_domain_Zones" idField="zoneId" modelAttribute="zones" path="/zoneses" versionField="Version" z="4sAn0DVkUyS3iREUhswSTc6T+Bk=">
+        <field:input field="zoneName" id="c_com_nw_domain_Zones_zoneName" z="Vsn+D7ni7CLxhnuvn0aZDPul6ME="/>
+        <field:input field="zoneCode" id="c_com_nw_domain_Zones_zoneCode" z="9ymcItGmHT8t3L/vFyzmA1VegdQ="/>
+        <field:input field="remark" id="c_com_nw_domain_Zones_remark" z="3lkRHjAstA1IG5wzdOGJ+fM55Aw="/>
+        <field:select field="zoneMapId" id="c_com_nw_domain_Zones_zoneMapId" itemValue="zoneMapId" items="${zonemaps}" path="/zonemaps" z="q0haF57jbY/hA6NibvvluW5dUbE="/>
+    </form:update>
+</div>

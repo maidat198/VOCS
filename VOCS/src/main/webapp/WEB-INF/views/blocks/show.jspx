@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_nw_domain_Block" object="${block}" path="/blocks" z="nbAtKKeYgr0W/PtTmBRVZRCxe/k=">
+        <field:display field="blockType" id="s_com_nw_domain_Block_blockType" object="${block}" z="9oZFV5PW411YTfMVg6VNwpI0Sro="/>
+        <field:display field="categoryId" id="s_com_nw_domain_Block_categoryId" object="${block}" z="AlrpQ+VrH0zSr48mCRJVMI9iQqs="/>
+        <field:display field="blockName" id="s_com_nw_domain_Block_blockName" object="${block}" z="fwlUfp0G8YXBGs/NTxdn6yImCl8="/>
+        <field:display field="isUseSpecialMethod" id="s_com_nw_domain_Block_isUseSpecialMethod" object="${block}" z="FkwuyeDuokS9yPHlTw+dHFGx49w="/>
+        <field:display field="isCreateNewBalance" id="s_com_nw_domain_Block_isCreateNewBalance" object="${block}" z="8JGKO+zR5sdRiaj1NHjBxGipmQ0="/>
+        <field:display field="affectedObjType" id="s_com_nw_domain_Block_affectedObjType" object="${block}" z="yS9YjfogcHutMOh/Tn1Bp/y+wIg="/>
+        <field:display field="affectedValue" id="s_com_nw_domain_Block_affectedValue" object="${block}" z="yf1OBbvPXsKwArqhn7CyQmjt1tw="/>
+        <field:display field="affectedField" id="s_com_nw_domain_Block_affectedField" object="${block}" z="vr/7sUachrTbbUPQfAaXYE8aCws="/>
+    </page:show>
+</div>

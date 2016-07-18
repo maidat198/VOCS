@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_nw_domain_Formula" items="${formulas}" z="zVptHcYeSH5dxicZ2vcg0q+oKOw=">
+        <table:table data="${formulas}" id="l_com_nw_domain_Formula" path="/formulas" typeIdFieldName="formulaId" z="WBxrYkAxY243jZHlPuxJ6WNoVvU=">
+            <table:column id="c_com_nw_domain_Formula_formulaType" property="formulaType" z="wmyeygnd3V3QCWlW2B7vE8NH+qI="/>
+            <table:column id="c_com_nw_domain_Formula_a" property="a" z="xIObrf+lUkPz41nXwK9ofLHqTDY="/>
+            <table:column id="c_com_nw_domain_Formula_b" property="b" z="2Qle6RDJuhpt6oE2yhc6lQGPWFE="/>
+            <table:column id="c_com_nw_domain_Formula_per" property="per" z="+6r3S3fCyqLpMxTED1xsA3IItmE="/>
+            <table:column id="c_com_nw_domain_Formula_categoryId" property="categoryId" z="nHN0jWwCfs/gkKC1XbZiYDjOdsk="/>
+            <table:column id="c_com_nw_domain_Formula_triggerOcsId" property="triggerOcsId" z="t8Kh5DaMYTmppmVrji8wexXFN5k="/>
+        </table:table>
+    </page:list>
+</div>

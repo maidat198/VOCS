@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_nw_domain_Threshold" object="${threshold}" path="/thresholds" z="+HpC5vsr9obLpMnENM13AzgZU1c=">
+        <field:display field="isPercentage" id="s_com_nw_domain_Threshold_isPercentage" object="${threshold}" z="w7OVYEfHSKVx5dfbs82Hkyqc9SI="/>
+        <field:display field="thresholdType" id="s_com_nw_domain_Threshold_thresholdType" object="${threshold}" z="7UoZ9X5y6O0Alj6YcX5W313r9WQ="/>
+        <field:display field="thresValue" id="s_com_nw_domain_Threshold_thresValue" object="${threshold}" z="qsffItUBSCBgIlBXhVtLRzef6Pc="/>
+        <field:display field="thresholdName" id="s_com_nw_domain_Threshold_thresholdName" object="${threshold}" z="5RZ7+aGezs+Rlf7p09su8qCL6Wo="/>
+        <field:display field="externalId" id="s_com_nw_domain_Threshold_externalId" object="${threshold}" z="gmx7iPxaQjRs8NlDiI5X13CQdw0="/>
+        <field:display field="triggerId" id="s_com_nw_domain_Threshold_triggerId" object="${threshold}" z="iKYU2kW4iCb5GJlt1ypmJSpjuS0="/>
+    </page:show>
+</div>

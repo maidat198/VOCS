@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_nw_domain_TriggerOCS" object="${triggerocs}" path="/triggerocss" z="os9qfIYtajRifbwrDNT78mbS6jM=">
+        <field:display field="triggerName" id="s_com_nw_domain_TriggerOCS_triggerName" object="${triggerocs}" z="feP3ubuL54M1LEZKKixhKShmO/s="/>
+        <field:display field="status" id="s_com_nw_domain_TriggerOCS_status" object="${triggerocs}" z="waWJEDbSgEl+EoTFFQM9UnkjctU="/>
+        <field:display field="description" id="s_com_nw_domain_TriggerOCS_description" object="${triggerocs}" z="ckv8sFRFXiUcbEvC3mC2DKT/J9o="/>
+        <field:display field="categoryId" id="s_com_nw_domain_TriggerOCS_categoryId" object="${triggerocs}" z="PXsQATH6zhozaoio1R9ABQjvVEs="/>
+    </page:show>
+</div>

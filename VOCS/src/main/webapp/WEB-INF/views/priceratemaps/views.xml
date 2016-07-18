@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="priceratemaps/list">
+        <put-attribute name="body" value="/WEB-INF/views/priceratemaps/list.jspx"/>
+    </definition>
+<definition extends="default" name="priceratemaps/show">
+        <put-attribute name="body" value="/WEB-INF/views/priceratemaps/show.jspx"/>
+    </definition>
+<definition extends="default" name="priceratemaps/create">
+        <put-attribute name="body" value="/WEB-INF/views/priceratemaps/create.jspx"/>
+    </definition>
+<definition extends="default" name="priceratemaps/update">
+        <put-attribute name="body" value="/WEB-INF/views/priceratemaps/update.jspx"/>
+    </definition>
+</tiles-definitions>

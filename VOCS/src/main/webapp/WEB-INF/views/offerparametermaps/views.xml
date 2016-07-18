@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="offerparametermaps/list">
+        <put-attribute name="body" value="/WEB-INF/views/offerparametermaps/list.jspx"/>
+    </definition>
+<definition extends="default" name="offerparametermaps/show">
+        <put-attribute name="body" value="/WEB-INF/views/offerparametermaps/show.jspx"/>
+    </definition>
+<definition extends="default" name="offerparametermaps/create">
+        <put-attribute name="body" value="/WEB-INF/views/offerparametermaps/create.jspx"/>
+    </definition>
+<definition extends="default" name="offerparametermaps/update">
+        <put-attribute name="body" value="/WEB-INF/views/offerparametermaps/update.jspx"/>
+    </definition>
+</tiles-definitions>

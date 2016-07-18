@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_nw_domain_ZoneData" items="${zonedatas}" z="0PCZyYfa+xHeXD43EB0jzvr7lsE=">
+        <table:table data="${zonedatas}" id="l_com_nw_domain_ZoneData" path="/zonedatas" typeIdFieldName="zoneDataId" z="qW1VwnONMYxpm0H+CvU+l+uA7zM=">
+            <table:column id="c_com_nw_domain_ZoneData_zoneDataValue" property="zoneDataValue" z="IH61aFPX000MqOrf+SVSioFs6xk="/>
+            <table:column id="c_com_nw_domain_ZoneData_zoneId" property="zoneId" z="H1t6ZQ/xHtFvMCNWkZl0b7bsVKw="/>
+        </table:table>
+    </page:list>
+</div>

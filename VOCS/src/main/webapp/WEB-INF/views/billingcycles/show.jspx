@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_nw_domain_BillingCycle" object="${billingcycle}" path="/billingcycles" z="IsxGmq1wf3+IzWjH5uozlWs3qF8=">
+        <field:display field="billingCycleTypeId" id="s_com_nw_domain_BillingCycle_billingCycleTypeId" object="${billingcycle}" z="z+jNDkkoXB0HrterqkUAXg8tHDU="/>
+        <field:display date="true" dateTimePattern="${billingCycle_cyclebegindate_date_format}" field="cycleBeginDate" id="s_com_nw_domain_BillingCycle_cycleBeginDate" object="${billingcycle}" z="L8VfbGCmNnD/0Dp2gvOE2crhe0o="/>
+        <field:display date="true" dateTimePattern="${billingCycle_cycleenddate_date_format}" field="cycleEndDate" id="s_com_nw_domain_BillingCycle_cycleEndDate" object="${billingcycle}" z="qJ6p9xQWPYqgRGf5iXBccWBtffc="/>
+        <field:display field="states" id="s_com_nw_domain_BillingCycle_states" object="${billingcycle}" z="eIWkMUgcxSJhc/V5CUtnmVn0rwg="/>
+    </page:show>
+</div>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_nw_domain_BlockRateTableMap" idField="blockTableRateMapId" modelAttribute="blockRateTableMap" path="/blockratetablemaps" versionField="Version" z="eBP1OQHt+GyR2ckUpGYkEW2/gsI=">
+        <field:select field="blockId" id="c_com_nw_domain_BlockRateTableMap_blockId" itemValue="blockId" items="${blocks}" path="/blocks" z="f9xiQol7DKaxqACD+NkW7NTYayw="/>
+        <field:select field="rateTableId" id="c_com_nw_domain_BlockRateTableMap_rateTableId" itemValue="rateTableId" items="${ratetables}" path="/ratetables" z="yXC/AXN2iBWFxvrEsw6woQbCXEE="/>
+        <field:input field="componentType" id="c_com_nw_domain_BlockRateTableMap_componentType" validationMessageCode="field_invalid_integer" z="lj3MV42OaRsYCxRB42cRkgb+20Y="/>
+        <field:input field="rateTableIndex" id="c_com_nw_domain_BlockRateTableMap_rateTableIndex" validationMessageCode="field_invalid_integer" z="qGERJL9XayGX5nhrKHfoFc9upLM="/>
+    </form:update>
+</div>

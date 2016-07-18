@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_nw_domain_TriggerFieldBuilder" object="${triggerfieldbuilder}" path="/triggerfieldbuilders" z="Z5KZ1acYeEyVgGXAE6zyun1m4vU=">
+        <field:display field="field_name" id="s_com_nw_domain_TriggerFieldBuilder_field_name" object="${triggerfieldbuilder}" z="vfYm+4cZsbBtvxnwOCsIJdQFQDA="/>
+        <field:display field="processFunction" id="s_com_nw_domain_TriggerFieldBuilder_processFunction" object="${triggerfieldbuilder}" z="wCssfhZV0Y0/RQuo0BoQslNDIxE="/>
+        <field:display field="formatTemplateId" id="s_com_nw_domain_TriggerFieldBuilder_formatTemplateId" object="${triggerfieldbuilder}" z="5MgPpimj6DQjP3A1s37lvD7Y284="/>
+        <field:display field="langId" id="s_com_nw_domain_TriggerFieldBuilder_langId" object="${triggerfieldbuilder}" z="S2MZfj67GWGA6NkJEoV6DAzlIJ0="/>
+        <field:display field="status" id="s_com_nw_domain_TriggerFieldBuilder_status" object="${triggerfieldbuilder}" z="Iyjq4c2bpopSRy6wcmOTvVWVj0E="/>
+    </page:show>
+</div>

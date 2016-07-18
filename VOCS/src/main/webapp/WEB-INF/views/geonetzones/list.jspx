@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_nw_domain_GeoNetZone" items="${geonetzones}" z="ANUdD4ks/bdKulikC9PT8YBhTcU=">
+        <table:table data="${geonetzones}" id="l_com_nw_domain_GeoNetZone" path="/geonetzones" typeIdFieldName="geoNetZoneId" z="AV2D9NCi95cu2rn+eLiSUhyXDkU=">
+            <table:column id="c_com_nw_domain_GeoNetZone_cellId" property="cellId" z="RdG2Ug9yWzlO+RzDj5Z5o6j2fHw="/>
+            <table:column id="c_com_nw_domain_GeoNetZone_geoHomeZoneId" property="geoHomeZoneId" z="26kRV05pgefNqymj7J4mBvGUMO0="/>
+            <table:column date="true" dateTimePattern="${geoNetZone_updatedate_date_format}" id="c_com_nw_domain_GeoNetZone_updateDate" property="updateDate" z="03cs6EVTn9oWumaKHpNfRg4YPG4="/>
+        </table:table>
+    </page:list>
+</div>

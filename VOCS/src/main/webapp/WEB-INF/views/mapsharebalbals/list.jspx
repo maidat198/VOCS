@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_nw_domain_MapShareBalBal" items="${mapsharebalbals}" z="1JlrumecelNO1E2vLM4zQqjBV+8=">
+        <table:table data="${mapsharebalbals}" id="l_com_nw_domain_MapShareBalBal" path="/mapsharebalbals" typeIdFieldName="shareBalTypeId" z="LuOhhvrFNkKMEmdMyyHsVyzf2bw=">
+            <table:column id="c_com_nw_domain_MapShareBalBal_baltypeId" property="baltypeId" z="S6v8fdHZ+SH0c+c5DEMb6mjZ978="/>
+        </table:table>
+    </page:list>
+</div>

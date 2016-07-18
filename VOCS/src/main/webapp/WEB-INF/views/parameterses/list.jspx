@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_nw_domain_Parameters" items="${parameterses}" z="v/UqaX4ZU9uclmbtW9e9VcfWWO8=">
+        <table:table data="${parameterses}" id="l_com_nw_domain_Parameters" path="/parameterses" typeIdFieldName="parameterId" z="cjHnuIH/qK1Qv0A6WMoZEYA+eLw=">
+            <table:column id="c_com_nw_domain_Parameters_ownerLevel" property="ownerLevel" z="cW9t8mWONLnjOxepK+ExUVsNuN0="/>
+            <table:column id="c_com_nw_domain_Parameters_parameterValue" property="parameterValue" z="MrCPitY9szaBuqLvby8GX+ZL790="/>
+        </table:table>
+    </page:list>
+</div>

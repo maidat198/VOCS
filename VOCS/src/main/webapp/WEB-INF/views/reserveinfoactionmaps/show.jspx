@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_nw_domain_ReserveInfoActionMap" object="${reserveinfoactionmap}" path="/reserveinfoactionmaps" z="pywrMzQcFGXrl783TdziYtqORoA=">
+        <field:display field="reserveInfoId" id="s_com_nw_domain_ReserveInfoActionMap_reserveInfoId" object="${reserveinfoactionmap}" z="8SgA39P4utsXv3XOux8MMj8HEic="/>
+        <field:display field="actionId" id="s_com_nw_domain_ReserveInfoActionMap_actionId" object="${reserveinfoactionmap}" z="8g6NlLGVtxLZQHRJva8Evu+QUoE="/>
+    </page:show>
+</div>

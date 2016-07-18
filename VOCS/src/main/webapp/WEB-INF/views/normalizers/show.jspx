@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_nw_domain_Normalizer" object="${normalizer}" path="/normalizers" z="f9DxHwaLLT4IY5//W6KFCIq/IFw=">
+        <field:display field="normalizerName" id="s_com_nw_domain_Normalizer_normalizerName" object="${normalizer}" z="aP/nDa1szBynnS3eoC4DPjSD+44="/>
+        <field:display field="normalizerType" id="s_com_nw_domain_Normalizer_normalizerType" object="${normalizer}" z="tJQXr/fijCk4ZhK4Zt95h89q+bI="/>
+        <field:display field="normalizerState" id="s_com_nw_domain_Normalizer_normalizerState" object="${normalizer}" z="T4TY78N9D5gKCXcsJO14pHEFH6o="/>
+        <field:display field="defaultValue" id="s_com_nw_domain_Normalizer_defaultValue" object="${normalizer}" z="y73K/F5lNFXl8zB1JpyceXCGKI0="/>
+        <field:display field="valueIfNull" id="s_com_nw_domain_Normalizer_valueIfNull" object="${normalizer}" z="9lYqVb3i8T0QWNCOmR1oWovbFls="/>
+        <field:display field="inputField" id="s_com_nw_domain_Normalizer_inputField" object="${normalizer}" z="Wp5X11LhruIp9TliFYD2OAyMhHk="/>
+        <field:display field="specialFields" id="s_com_nw_domain_Normalizer_specialFields" object="${normalizer}" z="XV2V6pGSGgUKUirQznOSPpqDyLQ="/>
+        <field:display field="categoryId" id="s_com_nw_domain_Normalizer_categoryId" object="${normalizer}" z="3X4IywNEpv5hUkp61WVEChL0SfU="/>
+        <field:display field="queryState" id="s_com_nw_domain_Normalizer_queryState" object="${normalizer}" z="mgLTGAMVgPlhOKhxMwWOtg7CuB4="/>
+    </page:show>
+</div>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <menu:category id="c_threshold" z="oM0QBg+tzlSLR6/ZeJhCiWLxQlo=">
+            <menu:item id="i_threshold_new" messageCode="global_menu_new" url="/thresholds?form" z="8mkqBEkoZtmVKRZCvP9XEDzq3kY="/>
+            <menu:item id="i_threshold_list" messageCode="global_menu_list" url="/thresholds?page=1&amp;size=${empty param.size ? 10 : param.size}" z="FThGc9fbWVQW9RfxewthLxxywO0="/>
+        </menu:category>
+        <menu:category id="c_triggerevent" z="97FXKkb1sXpFL0YvGZWd2mPHaEM=">
+            <menu:item id="i_triggerevent_new" messageCode="global_menu_new" url="/triggerevents?form" z="nTarM2i9LbngHiNdNvcHlPXnWFo="/>
+            <menu:item id="i_triggerevent_list" messageCode="global_menu_list" url="/triggerevents?page=1&amp;size=${empty param.size ? 10 : param.size}" z="XqIZ033GU47zbGQjeOg5D92Im3c="/>
+        </menu:category>
+        <menu:category id="c_normparam" z="gEIaJpPuCV8HIXjLt+bleDNnpQU=">
+            <menu:item id="i_normparam_new" messageCode="global_menu_new" url="/normparams?form" z="VQADBJ9umfVunuD7ZcyUUaAcrOw="/>
+            <menu:item id="i_normparam_list" messageCode="global_menu_list" url="/normparams?page=1&amp;size=${empty param.size ? 10 : param.size}" z="9ckazFPOgPvF6Zd03wAKv3O/xdY="/>
+        </menu:category>
+        <menu:category id="c_sortpricecomponent" z="NP38woVhbUW80iFQHsxqG11ZDN0=">
+            <menu:item id="i_sortpricecomponent_new" messageCode="global_menu_new" url="/sortpricecomponents?form" z="HF4FgWPrzAqHdX0rUo7IkAJ4gQM="/>
+            <menu:item id="i_sortpricecomponent_list" messageCode="global_menu_list" url="/sortpricecomponents?page=1&amp;size=${empty param.size ? 10 : param.size}" z="xEOGsylYJMKD9GG2eOAdFlkTMv0="/>
+        </menu:category>
+        <menu:category id="c_triggerfieldbuilder" z="nxiBkKwHUCdM5T9OV52XUSbK/Xs=">
+            <menu:item id="i_triggerfieldbuilder_new" messageCode="global_menu_new" url="/triggerfieldbuilders?form" z="6hm7lDwP9w1Dv2uypEImGpwyFKQ="/>
+            <menu:item id="i_triggerfieldbuilder_list" messageCode="global_menu_list" url="/triggerfieldbuilders?page=1&amp;size=${empty param.size ? 10 : param.size}" z="P1W6B6okrl52VFcj3orHPkaLSj4="/>
+        </menu:category>
+        <menu:category id="c_normvalue" z="gDL/O6Xg5OpL5mhugmN9PHWh/Pk=">
+            <menu:item id="i_normvalue_new" messageCode="global_menu_new" url="/normvalues?form" z="DDcfTjcIJBaWuf7Z872c7gXi35E="/>
+            <menu:item id="i_normvalue_list" messageCode="global_menu_list" url="/normvalues?page=1&amp;size=${empty param.size ? 10 : param.size}" z="9L6GOQ3WiLclCHCzACLraj91HPo="/>
+        </menu:category>
+        <menu:category id="c_reserveinfoactionmap" z="Fg+R0Az3z/WsBfupwzKCetPegN8=">
+            <menu:item id="i_reserveinfoactionmap_new" messageCode="global_menu_new" url="/reserveinfoactionmaps?form" z="jdqVu65XVmsyRFgqvo+zS/UYdEM="/>
+            <menu:item id="i_reserveinfoactionmap_list" messageCode="global_menu_list" url="/reserveinfoactionmaps?page=1&amp;size=${empty param.size ? 10 : param.size}" z="UjBA7CUXHvanavTm1jv99/P7JbY="/>
+        </menu:category>
+        <menu:category id="c_mapsharebalbal" z="Q4Q9yvRAMkIW4abXDASMSKQudz0=">
+            <menu:item id="i_mapsharebalbal_new" messageCode="global_menu_new" url="/mapsharebalbals?form" z="X+laxnRkYIf6XFte3B4xPs3tmws="/>
+            <menu:item id="i_mapsharebalbal_list" messageCode="global_menu_list" url="/mapsharebalbals?page=1&amp;size=${empty param.size ? 10 : param.size}" z="pjYToHv+aK09HnEb4Z/pMHa030I="/>
+        </menu:category>
+        <menu:category id="c_thresholdbaltypemap" z="ezbaCLHN9xcOs8kw5MgDs2ojmU4=">
+            <menu:item id="i_thresholdbaltypemap_new" messageCode="global_menu_new" url="/thresholdbaltypemaps?form" z="rDGjZ6EztZ9YbrMHerhJ8nbqB38="/>
+            <menu:item id="i_thresholdbaltypemap_list" messageCode="global_menu_list" url="/thresholdbaltypemaps?page=1&amp;size=${empty param.size ? 10 : param.size}" z="iKTtC3nb4WrvknHialIahiqjoh0="/>
+        </menu:category>
+        <menu:category id="c_actionpricecomponentmap" z="IzdypEauq4e9sqMyvLUu3yR1xsw=">
+            <menu:item id="i_actionpricecomponentmap_new" messageCode="global_menu_new" url="/actionpricecomponentmaps?form" z="5rTcCFmSwyHAqXlnbhWN6bgCs5o="/>
+            <menu:item id="i_actionpricecomponentmap_list" messageCode="global_menu_list" url="/actionpricecomponentmaps?page=1&amp;size=${empty param.size ? 10 : param.size}" z="X5FCdippO1g3RrfSRxPy/350Lr8="/>
+        </menu:category>
+        <menu:category id="c_geohomezone" z="is5rFjBsmPSoIqjXtpcUXWL5te4=">
+            <menu:item id="i_geohomezone_new" messageCode="global_menu_new" url="/geohomezones?form" z="YnajstpLqfFNQQ7HV+iZfwIpN+M="/>
+            <menu:item id="i_geohomezone_list" messageCode="global_menu_list" url="/geohomezones?page=1&amp;size=${empty param.size ? 10 : param.size}" z="zn9A27jh6JT/PonsDRFwnUvoLAk="/>
+        </menu:category>
+        <menu:category id="c_triggermsgfield" z="BqKwC3ndhLtcnx4DKNisH7Pv3oI=">
+            <menu:item id="i_triggermsgfield_new" messageCode="global_menu_new" url="/triggermsgfields?form" z="ghfaBbQxIvwOFKjGNhs7NEmBPxI="/>
+            <menu:item id="i_triggermsgfield_list" messageCode="global_menu_list" url="/triggermsgfields?page=1&amp;size=${empty param.size ? 10 : param.size}" z="neJ2pTjbx/pFzL+wUuR5U7YHyeQ="/>
+        </menu:category>
+        <menu:category id="c_rowocs" z="Farc+8pwNQkjGbijIx7vNcrUav4=">
+            <menu:item id="i_rowocs_new" messageCode="global_menu_new" url="/rowocss?form" z="maTe3mmmoCA9iMFsMQ2T2UD72ps="/>
+            <menu:item id="i_rowocs_list" messageCode="global_menu_list" url="/rowocss?page=1&amp;size=${empty param.size ? 10 : param.size}" z="0vC1D//ScFbvYs+/WWYnaJNoHdw="/>
+        </menu:category>
+        <menu:category id="c_parameters" z="tBIkBqQyIqYQj4KGhO/O9Ry7Wio=">
+            <menu:item id="i_parameters_new" messageCode="global_menu_new" url="/parameterses?form" z="ybiLrWzXymPTVfXkv4U0wRvGsFE="/>
+            <menu:item id="i_parameters_list" messageCode="global_menu_list" url="/parameterses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="JKzbNLfxGGoGlWUUecr+O69Jl/U="/>
+        </menu:category>
+        <menu:category id="c_billingcycle" z="YRzLrODREPieM5gPpqlPGl/vck8=">
+            <menu:item id="i_billingcycle_new" messageCode="global_menu_new" url="/billingcycles?form" z="/+umYUrErT0AEaJP7JBSc2SIoLo="/>
+            <menu:item id="i_billingcycle_list" messageCode="global_menu_list" url="/billingcycles?page=1&amp;size=${empty param.size ? 10 : param.size}" z="49Tr6/lfbqj4AX9TrD5jfRh0YLs="/>
+        </menu:category>
+        <menu:category id="c_pricecomponent" z="Mfb7BntZ/IusW0FqZ+jE4qlbW9E=">
+            <menu:item id="i_pricecomponent_new" messageCode="global_menu_new" url="/pricecomponents?form" z="Tjiot6kzve48JJ/JF+zCQ+IRe20="/>
+            <menu:item id="i_pricecomponent_list" messageCode="global_menu_list" url="/pricecomponents?page=1&amp;size=${empty param.size ? 10 : param.size}" z="PNLxYWT2ZbuNeswPdZwL11q3GRg="/>
+        </menu:category>
+        <menu:category id="c_actiontype" z="o6WOZ/fIju1GW56fsJPNYyZl4Xc=">
+            <menu:item id="i_actiontype_new" messageCode="global_menu_new" url="/actiontypes?form" z="ZOriKVGqD78T8455WwYsF6pVEF8="/>
+            <menu:item id="i_actiontype_list" messageCode="global_menu_list" url="/actiontypes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="jmcy9PsxRvm05AGJ9Jdj/I7zM34="/>
+        </menu:category>
+        <menu:category id="c_eventactionmap" z="xoZuRCN0BfriB4Ual29rFbkCUfo=">
+            <menu:item id="i_eventactionmap_new" messageCode="global_menu_new" url="/eventactionmaps?form" z="suibcsJctSu8wnRUHfWhbRIXuP4="/>
+            <menu:item id="i_eventactionmap_list" messageCode="global_menu_list" url="/eventactionmaps?page=1&amp;size=${empty param.size ? 10 : param.size}" z="YoH/qadE77kAQ32/QxX6lArVc0Y="/>
+        </menu:category>
+        <menu:category id="c_eventactiontypemap" z="m2crjALzKwDxUV1/xIn6jnPoq6U=">
+            <menu:item id="i_eventactiontypemap_new" messageCode="global_menu_new" url="/eventactiontypemaps?form" z="TCwzSyWNyGCKzqNsR9jNhyjvOoM="/>
+            <menu:item id="i_eventactiontypemap_list" messageCode="global_menu_list" url="/eventactiontypemaps?page=1&amp;size=${empty param.size ? 10 : param.size}" z="YohV8QVl3iDMvlnHwIZ1SO5uFTM="/>
+        </menu:category>
+        <menu:category id="c_dynamicreserveratetablemap" z="ssBc17UZn1RmfITux7kDGexxJOc=">
+            <menu:item id="i_dynamicreserveratetablemap_new" messageCode="global_menu_new" url="/dynamicreserveratetablemaps?form" z="GjyT/Q3ZvNjf+BXE9EOJ7lrSsck="/>
+            <menu:item id="i_dynamicreserveratetablemap_list" messageCode="global_menu_list" url="/dynamicreserveratetablemaps?page=1&amp;size=${empty param.size ? 10 : param.size}" z="bx0MJlhEw9P1DQoLMDq5/W5RR+g="/>
+        </menu:category>
+        <menu:category id="c_columndt" z="dh+A8xv4WxpRLO+/sbtRIRjS3dA=">
+            <menu:item id="i_columndt_new" messageCode="global_menu_new" url="/columndts?form" z="WWB9WQ4Rdbk0naiqtMXP5qT1oVk="/>
+            <menu:item id="i_columndt_list" messageCode="global_menu_list" url="/columndts?page=1&amp;size=${empty param.size ? 10 : param.size}" z="oIli1Mzpc1NtM6V23dBuqFfHwys="/>
+        </menu:category>
+        <menu:category id="c_triggerfieldformat" z="rbAZ1beK5YCPbARcrHbPLgkEaJ4=">
+            <menu:item id="i_triggerfieldformat_new" messageCode="global_menu_new" url="/triggerfieldformats?form" z="tquuFM1bLnh6asVN8nNX6o9MCGQ="/>
+            <menu:item id="i_triggerfieldformat_list" messageCode="global_menu_list" url="/triggerfieldformats?page=1&amp;size=${empty param.size ? 10 : param.size}" z="4e9pYGut7WWRA+uGHJnTibRBYkQ="/>
+        </menu:category>
+        <menu:category id="c_priceratemap" z="oyhqOvMMGiw3dn+WFLgHB7Ybkj0=">
+            <menu:item id="i_priceratemap_new" messageCode="global_menu_new" url="/priceratemaps?form" z="O2FyE2TRvotEHUrzR8B1/E/5igM="/>
+            <menu:item id="i_priceratemap_list" messageCode="global_menu_list" url="/priceratemaps?page=1&amp;size=${empty param.size ? 10 : param.size}" z="aMTnpDrSxoTY4gTwRjHEp/X50qg="/>
+        </menu:category>
+        <menu:category id="c_dynamicreserve" z="1J49gETmcX9ThGfz2+FVuwj8UQM=">
+            <menu:item id="i_dynamicreserve_new" messageCode="global_menu_new" url="/dynamicreserves?form" z="CVjYriVRk3tljDWRLSNvDhG6zCE="/>
+            <menu:item id="i_dynamicreserve_list" messageCode="global_menu_list" url="/dynamicreserves?page=1&amp;size=${empty param.size ? 10 : param.size}" z="TH5QrxB8Y6IlO1RUy8Cg6FcHoVQ="/>
+        </menu:category>
+        <menu:category id="c_triggerocs" z="3cOfZwrR5eL5duk3FqaJitH0wzs=">
+            <menu:item id="i_triggerocs_new" messageCode="global_menu_new" url="/triggerocss?form" z="sTKrHmUj7gVGgdMkaMDPzTL9qBs="/>
+            <menu:item id="i_triggerocs_list" messageCode="global_menu_list" url="/triggerocss?page=1&amp;size=${empty param.size ? 10 : param.size}" z="93ocOo4UqwTrnP5zXCdqgpQkdI4="/>
+        </menu:category>
+        <menu:category id="c_normalizer" z="3+xd54qDBPa0wjJk3+9VZgfAwPQ=">
+            <menu:item id="i_normalizer_new" messageCode="global_menu_new" url="/normalizers?form" z="+ioZUkb1gySv6x/JH+JqwZ3gdv0="/>
+            <menu:item id="i_normalizer_list" messageCode="global_menu_list" url="/normalizers?page=1&amp;size=${empty param.size ? 10 : param.size}" z="GO0IPwQiLXg67GWLBhgmnb0Tph8="/>
+        </menu:category>
+        <menu:category id="c_reserveinfo" z="hJ11m5rYkMgkRKZLh1h6WB7NQ6g=">
+            <menu:item id="i_reserveinfo_new" messageCode="global_menu_new" url="/reserveinfoes?form" z="D+ajGOZ0bZ2QAXeYk96vU3IsExw="/>
+            <menu:item id="i_reserveinfo_list" messageCode="global_menu_list" url="/reserveinfoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="V3J9ia1EwILQKBRID3xqEB44/l4="/>
+        </menu:category>
+        <menu:category id="c_pricecomponentblockmap" z="x/4wXXjrjmBKrWR2tZ+zNtptFws=">
+            <menu:item id="i_pricecomponentblockmap_new" messageCode="global_menu_new" url="/pricecomponentblockmaps?form" z="cdKmAtRIQe2ac0Pv2CQDoHLqJhM="/>
+            <menu:item id="i_pricecomponentblockmap_list" messageCode="global_menu_list" url="/pricecomponentblockmaps?page=1&amp;size=${empty param.size ? 10 : param.size}" z="/2xTMx9pBCsfn2xSo9JcQ4ettt4="/>
+        </menu:category>
+        <menu:category id="c_resultratemap" z="K7plqnQ9DTOzttJMqJfE0qGZodI=">
+            <menu:item id="i_resultratemap_new" messageCode="global_menu_new" url="/resultratemaps?form" z="gqI4+qsCJ3TZGgMgI+3XVKnoWG0="/>
+            <menu:item id="i_resultratemap_list" messageCode="global_menu_list" url="/resultratemaps?page=1&amp;size=${empty param.size ? 10 : param.size}" z="fh/orrHcMSVIKFISQAVy0G0lBsM="/>
+        </menu:category>
+        <menu:category id="c_triggerdestination" z="opFjEDxY9AG886mQa87NGniTdlU=">
+            <menu:item id="i_triggerdestination_new" messageCode="global_menu_new" url="/triggerdestinations?form" z="UPP8l6u7YnXpHlF0dFrm4/YTjm8="/>
+            <menu:item id="i_triggerdestination_list" messageCode="global_menu_list" url="/triggerdestinations?page=1&amp;size=${empty param.size ? 10 : param.size}" z="lo/TAiofG9KkvrRzSdhlmSrNlJQ="/>
+        </menu:category>
+        <menu:category id="c_normalizernormvaluemap" z="mkZd+EDjIXRKbw+9tbL644rWcjQ=">
+            <menu:item id="i_normalizernormvaluemap_new" messageCode="global_menu_new" url="/normalizernormvaluemaps?form" z="U2BbFrywXn/nJfPQnb/TCh0eZUs="/>
+            <menu:item id="i_normalizernormvaluemap_list" messageCode="global_menu_list" url="/normalizernormvaluemaps?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Ka50gAT7L3orOyWFJR4MS1S0pvM="/>
+        </menu:category>
+        <menu:category id="c_baltype" z="76MMyZBdvwUsMRXzaM7uLYSfQ1U=">
+            <menu:item id="i_baltype_new" messageCode="global_menu_new" url="/baltypes?form" z="rxky2N/WctXijxAwmX1fRWI4Vp0="/>
+            <menu:item id="i_baltype_list" messageCode="global_menu_list" url="/baltypes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="NjOTwiP87waUOXItp4l2DLbYKHI="/>
+        </menu:category>
+        <menu:category id="c_acmbillcycle" z="ZmjRgjbHk3s+94ZMP+G6F9Ldl3U=">
+            <menu:item id="i_acmbillcycle_new" messageCode="global_menu_new" url="/acmbillcycles?form" z="FumlVxLbHB43jcTHcD93HJDF684="/>
+            <menu:item id="i_acmbillcycle_list" messageCode="global_menu_list" url="/acmbillcycles?page=1&amp;size=${empty param.size ? 10 : param.size}" z="kydbPv0aMq4nc/sSLCvta3iO0vI="/>
+        </menu:category>
+        <menu:category id="c_triggertype" z="A77H4tdH/t0jHV81joKLCBdacCA=">
+            <menu:item id="i_triggertype_new" messageCode="global_menu_new" url="/triggertypes?form" z="Wo3eXYO6z3JBMTrYNNpNwpQeVL0="/>
+            <menu:item id="i_triggertype_list" messageCode="global_menu_list" url="/triggertypes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="vvrwpPcuWKgd7jSsw+qf+QAvAW0="/>
+        </menu:category>
+        <menu:category id="c_offerparametermap" z="ab+rmjmJQvY/46t+897ByXZeSl8=">
+            <menu:item id="i_offerparametermap_new" messageCode="global_menu_new" url="/offerparametermaps?form" z="MwemTP7N9ZlGTbTCIuB//PQWujE="/>
+            <menu:item id="i_offerparametermap_list" messageCode="global_menu_list" url="/offerparametermaps?page=1&amp;size=${empty param.size ? 10 : param.size}" z="CnOexqE/ImnzSuoyLvFfXVz2kds="/>
+        </menu:category>
+        <menu:category id="c_triggereventtype" z="PcCcfVDjqKSnkTw1NJ/OSJs9hzo=">
+            <menu:item id="i_triggereventtype_new" messageCode="global_menu_new" url="/triggereventtypes?form" z="148Z1fZhz81sMw8nHxT78gQcnOE="/>
+            <menu:item id="i_triggereventtype_list" messageCode="global_menu_list" url="/triggereventtypes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="JnnU/b4Q0TxV7wCm5NlY2WkSE4Y="/>
+        </menu:category>
+        <menu:category id="c_decisiontable" z="cOgST8B/JRRCZwUC74VGqUYMaG0=">
+            <menu:item id="i_decisiontable_new" messageCode="global_menu_new" url="/decisiontables?form" z="Wd3S5v+Wcz9owi4obb2HIYXnQcM="/>
+            <menu:item id="i_decisiontable_list" messageCode="global_menu_list" url="/decisiontables?page=1&amp;size=${empty param.size ? 10 : param.size}" z="YuGgO1Ep2Ortp7QFNvBkVPGpmwU="/>
+        </menu:category>
+        <menu:category id="c_ratetableresult" z="soTVnErNcycuR4d1gufYOIBaVgY=">
+            <menu:item id="i_ratetableresult_new" messageCode="global_menu_new" url="/ratetableresults?form" z="G7d2EFWzwkshsQq1VPUVkKP0Q2k="/>
+            <menu:item id="i_ratetableresult_list" messageCode="global_menu_list" url="/ratetableresults?page=1&amp;size=${empty param.size ? 10 : param.size}" z="4b5f25O4dwFR3Hb8nyQNZMD7uek="/>
+        </menu:category>
+        <menu:category id="c_calcunit" z="meysuHPl8zHFw9tEgqcCsCNa2Ow=">
+            <menu:item id="i_calcunit_new" messageCode="global_menu_new" url="/calcunits?form" z="MbK5d3TElvlXdOs+2yQ/aBMut4E="/>
+            <menu:item id="i_calcunit_list" messageCode="global_menu_list" url="/calcunits?page=1&amp;size=${empty param.size ? 10 : param.size}" z="64XeJmbEMfBUSUT8VGpEp7Bt7Mw="/>
+        </menu:category>
+        <menu:category id="c_columndecisiontablemap" z="1kD9QyZPy0Gs2JjxSjhPii9oVIE=">
+            <menu:item id="i_columndecisiontablemap_new" messageCode="global_menu_new" url="/columndecisiontablemaps?form" z="ts+eDwiT9tLeO8Jw+Smjt4cp6qQ="/>
+            <menu:item id="i_columndecisiontablemap_list" messageCode="global_menu_list" url="/columndecisiontablemaps?page=1&amp;size=${empty param.size ? 10 : param.size}" z="SK1iEl9847sJLRiEKHrvsuYuCNQ="/>
+        </menu:category>
+        <menu:category id="c_blockratetablemap" z="CkiyyVHsB2k5nAzqxG+u6DTdgwM=">
+            <menu:item id="i_blockratetablemap_new" messageCode="global_menu_new" url="/blockratetablemaps?form" z="neD6vuMvrMgeuf9fo6Mvmv/14OE="/>
+            <menu:item id="i_blockratetablemap_list" messageCode="global_menu_list" url="/blockratetablemaps?page=1&amp;size=${empty param.size ? 10 : param.size}" z="NBJgCjHdNXxt6Mse4tdloa8z0jQ="/>
+        </menu:category>
+        <menu:category id="c_offeractionmap" z="km9r5KmLU83rDgaX8OKSXtFyz3k=">
+            <menu:item id="i_offeractionmap_new" messageCode="global_menu_new" url="/offeractionmaps?form" z="N/UcGScE8g7aS2MOfrdSQ9bzumQ="/>
+            <menu:item id="i_offeractionmap_list" messageCode="global_menu_list" url="/offeractionmaps?page=1&amp;size=${empty param.size ? 10 : param.size}" z="C68dIR2P6M0A2AXw3f86qAJp6ZE="/>
+        </menu:category>
+        <menu:category id="c_sortpriceratetablemap" z="sPBF2kUQNIwEOWp66a01pW/YoE8=">
+            <menu:item id="i_sortpriceratetablemap_new" messageCode="global_menu_new" url="/sortpriceratetablemaps?form" z="9U/7w4QLGUEMyrpUFhClZsQtVTo="/>
+            <menu:item id="i_sortpriceratetablemap_list" messageCode="global_menu_list" url="/sortpriceratetablemaps?page=1&amp;size=${empty param.size ? 10 : param.size}" z="X02LJYvW7LWO0KV0hNM3ul087N8="/>
+        </menu:category>
+        <menu:category id="c_actions" z="SdrBUpEhzAWiANaS1Nv0dDVO9Ws=">
+            <menu:item id="i_actions_new" messageCode="global_menu_new" url="/actionses?form" z="O7PgpG7NvgNWOpXtvzlwhJRsDgU="/>
+            <menu:item id="i_actions_list" messageCode="global_menu_list" url="/actionses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="fKWeHLK15SxgCANHXnDSp9Oo9j8="/>
+        </menu:category>
+        <menu:category id="c_normalizernormparammap" z="dr3Bi4HVm6R9E+vq/k5VuRcH3kU=">
+            <menu:item id="i_normalizernormparammap_new" messageCode="global_menu_new" url="/normalizernormparammaps?form" z="qy8otOAudJCJam7JSRBlIYshVwA="/>
+            <menu:item id="i_normalizernormparammap_list" messageCode="global_menu_list" url="/normalizernormparammaps?page=1&amp;size=${empty param.size ? 10 : param.size}" z="lqCDHNNNdzzlYDaG0BfCJFFHmM4="/>
+        </menu:category>
+        <menu:category id="c_mapacmbalbal" z="SvOIE2/DwaqrsNj8kAUl8oUf/9s=">
+            <menu:item id="i_mapacmbalbal_new" messageCode="global_menu_new" url="/mapacmbalbals?form" z="Kfev5ESWV+g+KRNlR363OWuemJU="/>
+            <menu:item id="i_mapacmbalbal_list" messageCode="global_menu_list" url="/mapacmbalbals?page=1&amp;size=${empty param.size ? 10 : param.size}" z="441AcY718L4Ca+7z1sBTSOWWiNw="/>
+        </menu:category>
+        <menu:category id="c_category" z="kY676wLbZKc59UbcUGM8ogjOGOc=">
+            <menu:item id="i_category_new" messageCode="global_menu_new" url="/categorys?form" z="Xqz6msHtFFIlT4/UwJALJOYTD1I="/>
+            <menu:item id="i_category_list" messageCode="global_menu_list" url="/categorys?page=1&amp;size=${empty param.size ? 10 : param.size}" z="6D9be6DQ6UCnl0O7TDbbrkOhNIE="/>
+        </menu:category>
+        <menu:category id="c_offer" z="bs3Sh3zme+bqny+VM6X2mklvT1s=">
+            <menu:item id="i_offer_new" messageCode="global_menu_new" url="/offers?form" z="4q0UJnidRxDs96wTYpk/Hv2V/xU="/>
+            <menu:item id="i_offer_list" messageCode="global_menu_list" url="/offers?page=1&amp;size=${empty param.size ? 10 : param.size}" z="QR6XhqJI5BnM6dlbs5jzviiWhw0="/>
+        </menu:category>
+        <menu:category id="c_ratetable" z="xN+YZo14BM3IHIQsa7Y8XZgI+tk=">
+            <menu:item id="i_ratetable_new" messageCode="global_menu_new" url="/ratetables?form" z="1V+YmumKN1erWMgPdFPe/syDll8="/>
+            <menu:item id="i_ratetable_list" messageCode="global_menu_list" url="/ratetables?page=1&amp;size=${empty param.size ? 10 : param.size}" z="ttnZ9uEUBTiw8Zhspin2e2W7AwY="/>
+        </menu:category>
+        <menu:category id="c_triggerfieldlist" z="nVfTvHSUd5gCqMe323TMCRlExsE=">
+            <menu:item id="i_triggerfieldlist_new" messageCode="global_menu_new" url="/triggerfieldlists?form" z="yoBqSGogq/JqyqVjda87Sv2BmdM="/>
+            <menu:item id="i_triggerfieldlist_list" messageCode="global_menu_list" url="/triggerfieldlists?page=1&amp;size=${empty param.size ? 10 : param.size}" z="GCTZLlmWTlnZRaxLyNT1eP0C74M="/>
+        </menu:category>
+        <menu:category id="c_triggermsg" z="v47z35CtXcYw4Ze3e51Zu7ry83M=">
+            <menu:item id="i_triggermsg_new" messageCode="global_menu_new" url="/triggermsgs?form" z="byDxOWpYbi1bHo4ibVBY8/RInK4="/>
+            <menu:item id="i_triggermsg_list" messageCode="global_menu_list" url="/triggermsgs?page=1&amp;size=${empty param.size ? 10 : param.size}" z="6rYVnr/gm2bioXC1NGXL7GWDZ/I="/>
+        </menu:category>
+        <menu:category id="c_billingcycletype" z="LxODtBIW/1h8TpP8S+sBiEzqjSU=">
+            <menu:item id="i_billingcycletype_new" messageCode="global_menu_new" url="/billingcycletypes?form" z="LelhmMrR4HPrXJRIQ6WzvZqMdZE="/>
+            <menu:item id="i_billingcycletype_list" messageCode="global_menu_list" url="/billingcycletypes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="nkBq5p55rbNcqk3nzYZRbjCDPlw="/>
+        </menu:category>
+        <menu:category id="c_zonedata" z="EXLcVlVsaf5FmlKQ4xvG2hkD8iA=">
+            <menu:item id="i_zonedata_new" messageCode="global_menu_new" url="/zonedatas?form" z="fPdU9VB91hhBRXp97w/onTkfQ1A="/>
+            <menu:item id="i_zonedata_list" messageCode="global_menu_list" url="/zonedatas?page=1&amp;size=${empty param.size ? 10 : param.size}" z="QuByrC/t45RsPM0ewMpPIQJ8Tsk="/>
+        </menu:category>
+        <menu:category id="c_rowdecisiontablemap" z="Up2M1hW7xaqGdAz/9w8yU8zLOaU=">
+            <menu:item id="i_rowdecisiontablemap_new" messageCode="global_menu_new" url="/rowdecisiontablemaps?form" z="wOdAmpKn5Y4Lhs5+fdjCb8Z+pWM="/>
+            <menu:item id="i_rowdecisiontablemap_list" messageCode="global_menu_list" url="/rowdecisiontablemaps?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Y9jY8M1WfoH00u0xeWdVgqdgVLs="/>
+        </menu:category>
+        <menu:category id="c_event" z="AURyeKTmOObIARXqfI9DXukJNIE=">
+            <menu:item id="i_event_new" messageCode="global_menu_new" url="/events?form" z="BObcRn250Q23VbXG8kWIXR49efE="/>
+            <menu:item id="i_event_list" messageCode="global_menu_list" url="/events?page=1&amp;size=${empty param.size ? 10 : param.size}" z="MxywFHCy64/coyVU05GEg92ERF4="/>
+        </menu:category>
+        <menu:category id="c_geonetzone" z="d7qVLtXa9qrvVqLgDjvOYAVZjOk=">
+            <menu:item id="i_geonetzone_new" messageCode="global_menu_new" url="/geonetzones?form" z="j9wbgUAlI9la6oUp7muDam2J6B4="/>
+            <menu:item id="i_geonetzone_list" messageCode="global_menu_list" url="/geonetzones?page=1&amp;size=${empty param.size ? 10 : param.size}" z="93mB1f8M1F6eyfQlJmluFNhr0JU="/>
+        </menu:category>
+        <menu:category id="c_zones" z="GWAphW02GOulyHvbai2CLQB7gig=">
+            <menu:item id="i_zones_new" messageCode="global_menu_new" url="/zoneses?form" z="cPF32WA8luJYTyTQS4/ZUqnZstQ="/>
+            <menu:item id="i_zones_list" messageCode="global_menu_list" url="/zoneses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="VEyD+Xtlnos1jHAE4K77eWoYN44="/>
+        </menu:category>
+        <menu:category id="c_unittype" z="SiS1/w1xN9eZNO5OnUStYk3xOxc=">
+            <menu:item id="i_unittype_new" messageCode="global_menu_new" url="/unittypes?form" z="XlKt6NnE9oR8SfwfCceek79prF4="/>
+            <menu:item id="i_unittype_list" messageCode="global_menu_list" url="/unittypes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="BuKQtIYHOrSo8DjM3HFIfFOp55A="/>
+        </menu:category>
+        <menu:category id="c_formula" z="GcxkCdFtYDn4fuumOplK4Z7x/k4=">
+            <menu:item id="i_formula_new" messageCode="global_menu_new" url="/formulas?form" z="xzfc11dItOkJS+UMGvFwWKTFUU0="/>
+            <menu:item id="i_formula_list" messageCode="global_menu_list" url="/formulas?page=1&amp;size=${empty param.size ? 10 : param.size}" z="sRo/NaZvnTQ7lZCXg5MvYwWKxzQ="/>
+        </menu:category>
+        <menu:category id="c_zonemap" z="j2LDNaklbJcfKTvzFty4wat5an0=">
+            <menu:item id="i_zonemap_new" messageCode="global_menu_new" url="/zonemaps?form" z="UHQ7pp2dg70PiJa0C1SLAESI2zo="/>
+            <menu:item id="i_zonemap_list" messageCode="global_menu_list" url="/zonemaps?page=1&amp;size=${empty param.size ? 10 : param.size}" z="YT85utirOt6yN6Cvo4PtcN16T0U="/>
+        </menu:category>
+        <menu:category id="c_rowdt" z="7RVkFA5yqesIBZEC8eu0700w3XY=">
+            <menu:item id="i_rowdt_new" messageCode="global_menu_new" url="/rowdts?form" z="FNoVtIb9qJE/8aEI5gL1UJkp9io="/>
+            <menu:item id="i_rowdt_list" messageCode="global_menu_list" url="/rowdts?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Rq/PCuzahUZSm7yDWEy58nwKwWg="/>
+        </menu:category>
+        <menu:category id="c_block" z="IbepFwxJbq93nutJ3gtavvGFLMY=">
+            <menu:item id="i_block_new" messageCode="global_menu_new" url="/blocks?form" z="r9l+A514lqaUJp6AgCNpf6n29PQ="/>
+            <menu:item id="i_block_list" messageCode="global_menu_list" url="/blocks?page=1&amp;size=${empty param.size ? 10 : param.size}" z="HPQDfH4ykg/T5WcL30Bw/7/MvLk="/>
+        </menu:category>
+    </menu:menu>
+</div>

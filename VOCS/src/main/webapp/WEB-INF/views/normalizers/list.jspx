@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_nw_domain_Normalizer" items="${normalizers}" z="avI6r106F1gUNuXJeCDtYA1/G28=">
+        <table:table data="${normalizers}" id="l_com_nw_domain_Normalizer" path="/normalizers" typeIdFieldName="normalizerId" z="j8viHAYIAXQMwJUEFm3ZMqxwcbU=">
+            <table:column id="c_com_nw_domain_Normalizer_normalizerName" property="normalizerName" z="/4EJmyNXkwtmdX5BwUuiW2gvYwY="/>
+            <table:column id="c_com_nw_domain_Normalizer_normalizerType" property="normalizerType" z="bk9t6Nyz7tO+KgilnXOd23qrcl4="/>
+            <table:column id="c_com_nw_domain_Normalizer_normalizerState" property="normalizerState" z="2Uaso6+xOBY1R+nxKDBtDkSd3RM="/>
+            <table:column id="c_com_nw_domain_Normalizer_defaultValue" property="defaultValue" z="//KP0TbdsYP2+BNqIzqMmNZ848U="/>
+            <table:column id="c_com_nw_domain_Normalizer_valueIfNull" property="valueIfNull" z="RkgJfRBsvPMNEOKV090aifbz0dI="/>
+            <table:column id="c_com_nw_domain_Normalizer_inputField" property="inputField" z="tliSgmidBU2XUN663qLQ3YL9LfA="/>
+        </table:table>
+    </page:list>
+</div>

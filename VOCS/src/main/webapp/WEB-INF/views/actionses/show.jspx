@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_nw_domain_Actions" object="${actions}" path="/actionses" z="xqB0rymUJ9Dbz9Z4P5C5nk764wE=">
+        <field:display field="actionName" id="s_com_nw_domain_Actions_actionName" object="${actions}" z="fk1xx3AkXnI8cGUHpJ8nbv3gO70="/>
+        <field:display field="actionType" id="s_com_nw_domain_Actions_actionType" object="${actions}" z="RrQQDWBJ5N9ZMMW3JjsjWXGTqL0="/>
+        <field:display field="category_id" id="s_com_nw_domain_Actions_category_id" object="${actions}" z="x8PYkK0x8w4UrgiWpTK0FdJPKoM="/>
+        <field:display field="sortPriceComponentId" id="s_com_nw_domain_Actions_sortPriceComponentId" object="${actions}" z="UKs/q3wGWiW6m1vWE+q9JCgcNSs="/>
+        <field:display field="dynamicReserveId" id="s_com_nw_domain_Actions_dynamicReserveId" object="${actions}" z="F/5r4IEa+iz5YHUnSUrq+uXeh5A="/>
+    </page:show>
+</div>

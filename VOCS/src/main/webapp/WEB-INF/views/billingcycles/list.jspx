@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_nw_domain_BillingCycle" items="${billingcycles}" z="IBiYp87W1uvaeHoy1WCH1tQgF7o=">
+        <table:table data="${billingcycles}" id="l_com_nw_domain_BillingCycle" path="/billingcycles" typeIdFieldName="billingCycleId" z="YPNYeB8hdLe+K2pdGCDBK225ku8=">
+            <table:column id="c_com_nw_domain_BillingCycle_billingCycleTypeId" property="billingCycleTypeId" z="0n6LR2fL6LuO6UDfsMTwYnpAvcQ="/>
+            <table:column date="true" dateTimePattern="${billingCycle_cyclebegindate_date_format}" id="c_com_nw_domain_BillingCycle_cycleBeginDate" property="cycleBeginDate" z="0ny3r4ZnC04L5XOfPVMv70VePKI="/>
+            <table:column date="true" dateTimePattern="${billingCycle_cycleenddate_date_format}" id="c_com_nw_domain_BillingCycle_cycleEndDate" property="cycleEndDate" z="QDmchmERrFQrO9JH5PU3f9wQgu0="/>
+            <table:column id="c_com_nw_domain_BillingCycle_states" property="states" z="ofAIYbQoUJ+AtpbcI+N3RWX0POc="/>
+        </table:table>
+    </page:list>
+</div>

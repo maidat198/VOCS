@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_nw_domain_ColumnDecisionTableMap" idField="columnDecisionTableMapId" modelAttribute="columnDecisionTableMap" path="/columndecisiontablemaps" versionField="Version" z="FNGqtvgX+d9uJV66MOoYwPhcb/s=">
+        <field:select field="decisionTableId" id="c_com_nw_domain_ColumnDecisionTableMap_decisionTableId" itemValue="decisionTableId" items="${decisiontables}" path="/decisiontables" z="ce8WkijlTWmB7T1xJxBwuBKFvOc="/>
+        <field:select field="columnDtId" id="c_com_nw_domain_ColumnDecisionTableMap_columnDtId" itemValue="columnId" items="${columndts}" path="/columndts" z="MPXrD9xAincVS4KJdHwK3kgS8h8="/>
+    </form:update>
+</div>

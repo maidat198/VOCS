@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_nw_domain_TriggerDestination" items="${triggerdestinations}" z="EmJf9T9Sa0PtGW5MNI4dN3Du97I=">
+        <table:table data="${triggerdestinations}" id="l_com_nw_domain_TriggerDestination" path="/triggerdestinations" typeIdFieldName="destinationId" z="d746DwhbqvwP2RHzaxSlWK2kzFk=">
+            <table:column id="c_com_nw_domain_TriggerDestination_destName" property="destName" z="CfES5ldnIOBbURXRWFPMcsFy2r4="/>
+            <table:column id="c_com_nw_domain_TriggerDestination_destDescription" property="destDescription" z="KfcO6nJJt7XrD6zMb02HSNp2v4g="/>
+            <table:column id="c_com_nw_domain_TriggerDestination_status" property="status" z="24MuV+OjY6nLhJzr4IBl3G4+jSk="/>
+            <table:column id="c_com_nw_domain_TriggerDestination_categoryId" property="categoryId" z="dgCjOjwbe6ZkhMkFgaPXC+Bz4VM="/>
+        </table:table>
+    </page:list>
+</div>

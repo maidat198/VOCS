@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_nw_domain_DecisionTable" idField="decisionTableId" modelAttribute="decisionTable" path="/decisiontables" versionField="Version" z="gqrqJ1zmBCh7GU6LZowNKjG6Dyw=">
+        <field:input field="decisionTableName" id="c_com_nw_domain_DecisionTable_decisionTableName" z="3j8DLLj93LufXPDARLNoSPAIhcg="/>
+        <field:input field="defaultFormulaIndex" id="c_com_nw_domain_DecisionTable_defaultFormulaIndex" validationMessageCode="field_invalid_integer" z="zU5WIPCmevQbLndO+xdwV42L4+0="/>
+        <field:input field="remark" id="c_com_nw_domain_DecisionTable_remark" z="usS9wv3ywWfJ59bPnmoPK3x39KM="/>
+        <field:select field="categoryId" id="c_com_nw_domain_DecisionTable_categoryId" itemValue="categoryId" items="${categorys}" path="/categorys" z="FyrJOHG+MG9764rNfnm6tSVqCBs="/>
+    </form:update>
+</div>

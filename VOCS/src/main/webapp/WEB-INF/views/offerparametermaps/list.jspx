@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_nw_domain_OfferParameterMap" items="${offerparametermaps}" z="6w2TxioqGye8A5He+Ng6edkZFS4=">
+        <table:table data="${offerparametermaps}" id="l_com_nw_domain_OfferParameterMap" path="/offerparametermaps" typeIdFieldName="offerParameterMapId" z="ffPD6uXNVNwH31PPYiBq0MOHE1k=">
+            <table:column id="c_com_nw_domain_OfferParameterMap_offerId" property="offerId" z="VoDgx+2xMSXX0P9tNkygVTTwy0g="/>
+            <table:column id="c_com_nw_domain_OfferParameterMap_parameterId" property="parameterId" z="KaA9Bfx6ZIh+TN4jgiF0MqzjYBg="/>
+        </table:table>
+    </page:list>
+</div>

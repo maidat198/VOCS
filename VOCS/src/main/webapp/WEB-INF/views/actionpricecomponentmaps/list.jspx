@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_nw_domain_ActionPriceComponentMap" items="${actionpricecomponentmaps}" z="1bXIKaM+2UUeooZqqyH6qh5Sx4o=">
+        <table:table data="${actionpricecomponentmaps}" id="l_com_nw_domain_ActionPriceComponentMap" path="/actionpricecomponentmaps" typeIdFieldName="actionPriceComponentMapId" z="LPSy8vqT9vi2gKHQZXn9c9NcCwg=">
+            <table:column id="c_com_nw_domain_ActionPriceComponentMap_actionId" property="actionId" z="A0pYbnuKby/T9Up0nyt2xSZPys8="/>
+            <table:column id="c_com_nw_domain_ActionPriceComponentMap_priceComponentId" property="priceComponentId" z="6j7ApeA6/QtI0FQg8pKGVFJxxOA="/>
+            <table:column id="c_com_nw_domain_ActionPriceComponentMap_pcIndex" property="pcIndex" z="L2nswf/mtwXS36K0t2oVsM8KAI0="/>
+        </table:table>
+    </page:list>
+</div>

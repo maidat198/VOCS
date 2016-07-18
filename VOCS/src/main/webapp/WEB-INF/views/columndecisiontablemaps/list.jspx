@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_nw_domain_ColumnDecisionTableMap" items="${columndecisiontablemaps}" z="WfMZHrjSncAikgFCYr6szes4Ky4=">
+        <table:table data="${columndecisiontablemaps}" id="l_com_nw_domain_ColumnDecisionTableMap" path="/columndecisiontablemaps" typeIdFieldName="columnDecisionTableMapId" z="XBhNMiqcfsiib2Aym1kVv5h7MiE=">
+            <table:column id="c_com_nw_domain_ColumnDecisionTableMap_decisionTableId" property="decisionTableId" z="lJCOx63WdRhxf+GbFkMyS3/xXuU="/>
+            <table:column id="c_com_nw_domain_ColumnDecisionTableMap_columnDtId" property="columnDtId" z="krfvB04gXdUITWmafcMLwvvZBOM="/>
+        </table:table>
+    </page:list>
+</div>

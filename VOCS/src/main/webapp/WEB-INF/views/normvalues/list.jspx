@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_nw_domain_NormValue" items="${normvalues}" z="m9NuTD5p+xEYSBG+iNiYIFQPHJQ=">
+        <table:table data="${normvalues}" id="l_com_nw_domain_NormValue" path="/normvalues" typeIdFieldName="normValueId" z="E4DvGOueuuvAmpfVrujmTfHLzr8=">
+            <table:column id="c_com_nw_domain_NormValue_valueName" property="valueName" z="ogKY6uhbgZ6ceki+88ZDgEoVyqI="/>
+            <table:column id="c_com_nw_domain_NormValue_valueId" property="valueId" z="ywM4w151l/YTn2Rk63e2zKgUrNc="/>
+            <table:column id="c_com_nw_domain_NormValue_description" property="description" z="ryGfxl7O1gfaliRRP+xl6ZYfSAE="/>
+            <table:column id="c_com_nw_domain_NormValue_normValueIndex" property="normValueIndex" z="KljKMOGk/R6Sd9fBhqBwgQVCaGg="/>
+        </table:table>
+    </page:list>
+</div>

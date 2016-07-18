@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_nw_domain_TriggerEvent" object="${triggerevent}" path="/triggerevents" z="IlnqMYqRhwHObSgNS8aVNPflXts=">
+        <field:display field="trigger_event_name" id="s_com_nw_domain_TriggerEvent_trigger_event_name" object="${triggerevent}" z="LlTZ/lviqQlygy28vDFWbNrUVTg="/>
+        <field:display field="status" id="s_com_nw_domain_TriggerEvent_status" object="${triggerevent}" z="rgEXrCnHN5jF0++5eLRags9OVKM="/>
+        <field:display field="delay_process" id="s_com_nw_domain_TriggerEvent_delay_process" object="${triggerevent}" z="3RpggXnCTzB3iqfberavvE0Zmmw="/>
+        <field:display field="destination_id" id="s_com_nw_domain_TriggerEvent_destination_id" object="${triggerevent}" z="xw9sSBWOBzjFnlqkD/HtcSQp8to="/>
+        <field:display field="triggerOcsId" id="s_com_nw_domain_TriggerEvent_triggerOcsId" object="${triggerevent}" z="mW6gxBRq3dbBMQ12vvuh/B6pBZI="/>
+        <field:display field="trigger_event_type" id="s_com_nw_domain_TriggerEvent_trigger_event_type" object="${triggerevent}" z="WS40vnD4H8vueFpopTypUl1RKGo="/>
+        <field:display field="categoryId" id="s_com_nw_domain_TriggerEvent_categoryId" object="${triggerevent}" z="GXFaMEjsDml1C+BJ8BrcFgX9fRg="/>
+    </page:show>
+</div>

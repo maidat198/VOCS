@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_nw_domain_GeoNetZone" modelAttribute="geoNetZone" path="/geonetzones" render="${empty dependencies}" z="4fvJlvmLNN3p5U4TgJqaQty12rI=">
+        <field:input field="cellId" id="c_com_nw_domain_GeoNetZone_cellId" validationMessageCode="field_invalid_integer" z="Pr3xshbxHLzmMeqClGl7XUTZA/g="/>
+        <field:select field="geoHomeZoneId" id="c_com_nw_domain_GeoNetZone_geoHomeZoneId" itemValue="geoHomeZoneId" items="${geohomezones}" path="/geohomezones" z="ornuobyi+dHIqvL3aj50gPBC0UU="/>
+        <field:datetime dateTimePattern="${geoNetZone_updatedate_date_format}" field="updateDate" id="c_com_nw_domain_GeoNetZone_updateDate" z="ytdbzaK9GlBj/qz1xilSAuZyM9A="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_nw_domain_GeoNetZone" render="${not empty dependencies}" z="/lxIrj8PEFTQRzXZLqoys/JBfuA="/>
+</div>

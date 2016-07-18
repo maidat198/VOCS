@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_nw_domain_Event" items="${events}" z="FbI2F2HrbZ/EBRXHAvWGCDEwdZk=">
+        <table:table data="${events}" id="l_com_nw_domain_Event" path="/events" typeIdFieldName="eventId" z="2gESYGGrftNyOIHEqhCoUQTsNbA=">
+            <table:column id="c_com_nw_domain_Event_eventName" property="eventName" z="o8fDa5RhJ45BcCZVly4aVqcnMH8="/>
+            <table:column id="c_com_nw_domain_Event_description" property="description" z="/lfOSHxvL/z05DAdIe/QoeHH2UY="/>
+            <table:column id="c_com_nw_domain_Event_isRequireReserveInfo" property="isRequireReserveInfo" z="fQBrk3cuupMqVDk7Kr3GrN+7xAk="/>
+            <table:column id="c_com_nw_domain_Event_eventType" property="eventType" z="oNwbz3/Hxg4phVuJPcN90mEjIsA="/>
+        </table:table>
+    </page:list>
+</div>

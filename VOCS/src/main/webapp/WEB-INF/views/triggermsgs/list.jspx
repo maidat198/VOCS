@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_nw_domain_TriggerMsg" items="${triggermsgs}" z="xG5X/H7hA3MkZQQ0FI6ihm3xeSY=">
+        <table:table data="${triggermsgs}" id="l_com_nw_domain_TriggerMsg" path="/triggermsgs" typeIdFieldName="msgId" z="r2LPDw6YlEKcfQzOtw05RRYDTK4=">
+            <table:column id="c_com_nw_domain_TriggerMsg_msgName" property="msgName" z="KfcdEflMUeYg/l+EhJYoMcjGDP8="/>
+            <table:column id="c_com_nw_domain_TriggerMsg_msgDesc" property="msgDesc" z="ND5v4v7mtH6of4Epy49ssfmugzg="/>
+            <table:column id="c_com_nw_domain_TriggerMsg_status" property="status" z="LrPzJE5CxH+j0RPL8jcL5peTgjI="/>
+            <table:column id="c_com_nw_domain_TriggerMsg_triggerEventId" property="triggerEventId" z="rHtG4ew3VYqwzB53bbEXEJ8v3CE="/>
+        </table:table>
+    </page:list>
+</div>

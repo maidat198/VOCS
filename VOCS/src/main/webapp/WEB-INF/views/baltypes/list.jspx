@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_nw_domain_BalType" items="${baltypes}" z="XaLklXlcpnDASAwck3quHoGJd1c=">
+        <table:table data="${baltypes}" id="l_com_nw_domain_BalType" path="/baltypes" typeIdFieldName="balTypeId" z="clc0nyglFkB0PwAnj/YmUzmiAwA=">
+            <table:column id="c_com_nw_domain_BalType_balTypeName" property="balTypeName" z="3ZjW89Z5HGnr3N93abMzpRf2qik="/>
+            <table:column id="c_com_nw_domain_BalType_description" property="description" z="pgZGj4wEl0jszTkJEWiUYe3svSQ="/>
+            <table:column id="c_com_nw_domain_BalType_externalId" property="externalId" z="hOthdVK/v6sJ9iI3VzHxLKuKXdk="/>
+            <table:column id="c_com_nw_domain_BalType_balTypeType" property="balTypeType" z="7ATZgzE/PgXmqnEwbyYzb/JdiMQ="/>
+            <table:column id="c_com_nw_domain_BalType_categoryId" property="categoryId" z="DdMaiMZx4jbHiht6w0CTJ79PdDA="/>
+            <table:column id="c_com_nw_domain_BalType_paymentType" property="paymentType" z="C+i870O6zljv5gmuOAs3ht2ZuWo="/>
+        </table:table>
+    </page:list>
+</div>

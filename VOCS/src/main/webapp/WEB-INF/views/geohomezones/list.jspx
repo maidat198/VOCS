@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_nw_domain_GeoHomeZone" items="${geohomezones}" z="zVBX9VX7Yrgzf+Nl1pNETl5NS5M=">
+        <table:table data="${geohomezones}" id="l_com_nw_domain_GeoHomeZone" path="/geohomezones" typeIdFieldName="geoHomeZoneId" z="ktOs6t0ScsotUBCHC59rkFUPTWE=">
+            <table:column id="c_com_nw_domain_GeoHomeZone_geoHomeZoneName" property="geoHomeZoneName" z="xJKhTUukrLz5Hbxl1qmTUCJYgV4="/>
+            <table:column id="c_com_nw_domain_GeoHomeZone_geoHomeZoneCode" property="geoHomeZoneCode" z="RcpcnaAbg/gRbWn7f3QXFpTy+qg="/>
+            <table:column id="c_com_nw_domain_GeoHomeZone_remark" property="remark" z="83/x97WssQ7R2FPubwLjKWgI588="/>
+            <table:column id="c_com_nw_domain_GeoHomeZone_geoHomeZoneType" property="geoHomeZoneType" z="iH5od44mU8g06BEVAnopI6C4CdY="/>
+        </table:table>
+    </page:list>
+</div>

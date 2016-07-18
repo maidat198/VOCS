@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_nw_domain_Event" idField="eventId" modelAttribute="event" path="/events" versionField="Version" z="g4wbmx/g3hX/AmzZHCrshv7wL3w=">
+        <field:input field="eventName" id="c_com_nw_domain_Event_eventName" z="9DSg+VW4Jjtem4u0lUQ+OaQqZPs="/>
+        <field:input field="description" id="c_com_nw_domain_Event_description" z="6s57rQAojTMPRvHSGyi6wZBaU/Y="/>
+        <field:checkbox field="isRequireReserveInfo" id="c_com_nw_domain_Event_isRequireReserveInfo" z="HBvAEvuqTn/+g+hTcU2jIYUXrac="/>
+        <field:input field="eventType" id="c_com_nw_domain_Event_eventType" validationMessageCode="field_invalid_integer" z="49jpZCuHDZwgsHpTDkNSB0F5Bl0="/>
+    </form:update>
+</div>

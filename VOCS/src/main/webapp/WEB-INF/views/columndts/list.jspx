@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_nw_domain_ColumnDT" items="${columndts}" z="r8sO/VNYp+qndl4r8q6y7fqpgqo=">
+        <table:table data="${columndts}" id="l_com_nw_domain_ColumnDT" path="/columndts" typeIdFieldName="columnId" z="643ZHu2yiVLf+YQOPtcxfq+wl0o=">
+            <table:column id="c_com_nw_domain_ColumnDT_attribute" property="attribute" z="JX+K0s5l+YyaTyrIhPyZMbM0wGg="/>
+            <table:column id="c_com_nw_domain_ColumnDT_columnIndex" property="columnIndex" z="usEBEhotNW/QuOrfxXj6AmyzMj8="/>
+            <table:column id="c_com_nw_domain_ColumnDT_columnName" property="columnName" z="oHVIoirbnQ4/iEG90H9yNHaKipE="/>
+            <table:column id="c_com_nw_domain_ColumnDT_normalizerId" property="normalizerId" z="wfy1g7X/RO03cuHV7CgjLmqZMlc="/>
+        </table:table>
+    </page:list>
+</div>

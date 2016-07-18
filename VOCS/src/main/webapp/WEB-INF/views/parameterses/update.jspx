@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_nw_domain_Parameters" idField="parameterId" modelAttribute="parameters" path="/parameterses" versionField="Version" z="vWEzV50zEJgVBmpOOOL6Clqci/A=">
+        <field:input field="ownerLevel" id="c_com_nw_domain_Parameters_ownerLevel" validationMessageCode="field_invalid_integer" z="caDS5JG4cs7eiKZxH/Z1ncjwx50="/>
+        <field:input field="parameterValue" id="c_com_nw_domain_Parameters_parameterValue" z="b38tDRYE0nmlL4QVqakLoSNCqA0="/>
+    </form:update>
+</div>

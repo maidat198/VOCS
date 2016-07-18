@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_nw_domain_AcmBillCycle" object="${acmbillcycle}" path="/acmbillcycles" z="OmkW3or6iszZYqICPawtk4WaRfA=">
+        <field:display field="acmBillCycleId" id="s_com_nw_domain_AcmBillCycle_acmBillCycleId" object="${acmbillcycle}" z="dycCx530ZwymF9A2l6jwELn8SS4="/>
+        <field:display field="balTypeId" id="s_com_nw_domain_AcmBillCycle_balTypeId" object="${acmbillcycle}" z="9zk2F+2xxuk3tiLdPshJv6p+vZ4="/>
+        <field:display field="billingCycleTypeId" id="s_com_nw_domain_AcmBillCycle_billingCycleTypeId" object="${acmbillcycle}" z="pu/W5Cord5pKB/PwkQNQwKPY00g="/>
+    </page:show>
+</div>

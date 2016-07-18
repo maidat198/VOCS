@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_nw_domain_Parameters" object="${parameters}" path="/parameterses" z="uTvmIzUL1dkx9Ln9iGb2YcY9SYY=">
+        <field:display field="ownerLevel" id="s_com_nw_domain_Parameters_ownerLevel" object="${parameters}" z="wXvhIQarq7F1EUAVMM+TemvVXRI="/>
+        <field:display field="parameterValue" id="s_com_nw_domain_Parameters_parameterValue" object="${parameters}" z="M18FptWiihMm8suLVMJ1sihPOo0="/>
+    </page:show>
+</div>

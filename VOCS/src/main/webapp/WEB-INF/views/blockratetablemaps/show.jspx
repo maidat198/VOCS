@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_nw_domain_BlockRateTableMap" object="${blockratetablemap}" path="/blockratetablemaps" z="2nlZhFQDgJdHNIMQP+AVRq0kijI=">
+        <field:display field="blockId" id="s_com_nw_domain_BlockRateTableMap_blockId" object="${blockratetablemap}" z="fTzE9jOxYZ3FnSyAvE29IabJBAU="/>
+        <field:display field="rateTableId" id="s_com_nw_domain_BlockRateTableMap_rateTableId" object="${blockratetablemap}" z="qpem2t4Hxgw+dqJgM/Zib28d8jI="/>
+        <field:display field="componentType" id="s_com_nw_domain_BlockRateTableMap_componentType" object="${blockratetablemap}" z="WPils9m3r9tewurSmQCYdfbwisc="/>
+        <field:display field="rateTableIndex" id="s_com_nw_domain_BlockRateTableMap_rateTableIndex" object="${blockratetablemap}" z="xtqLgelPmVI5X6EuY/xFgKGT4yk="/>
+    </page:show>
+</div>

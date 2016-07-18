@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_nw_domain_GeoHomeZone" object="${geohomezone}" path="/geohomezones" z="6GAWjiA5R8ay8iwQOahnIuFpjaw=">
+        <field:display field="geoHomeZoneName" id="s_com_nw_domain_GeoHomeZone_geoHomeZoneName" object="${geohomezone}" z="H22eUBPTtmuPeSfiMLuTZvqEOws="/>
+        <field:display field="geoHomeZoneCode" id="s_com_nw_domain_GeoHomeZone_geoHomeZoneCode" object="${geohomezone}" z="Da6WSZd2u4ZqLOpToYM1QQVuLas="/>
+        <field:display field="remark" id="s_com_nw_domain_GeoHomeZone_remark" object="${geohomezone}" z="FbtRl7DYziurTUob7r+4YoOkr3I="/>
+        <field:display field="geoHomeZoneType" id="s_com_nw_domain_GeoHomeZone_geoHomeZoneType" object="${geohomezone}" z="GTGxmQLf7Ymdp8YFKU3Nbg8DRjE="/>
+    </page:show>
+</div>

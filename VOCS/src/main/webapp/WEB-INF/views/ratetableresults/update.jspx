@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_nw_domain_RateTableResult" idField="rateTableResultId" modelAttribute="rateTableResult" path="/ratetableresults" versionField="Version" z="X6LXg/d0fqZBqZ99XpSIw8l1qjE=">
+        <field:input field="rowIndex" id="c_com_nw_domain_RateTableResult_rowIndex" validationMessageCode="field_invalid_integer" z="tVjeV8hbyBPhWeDuGWxCCfvHSRY="/>
+        <field:select field="formulaId" id="c_com_nw_domain_RateTableResult_formulaId" itemValue="formulaId" items="${formulas}" path="/formulas" z="/HnfOhN45BRY2MW70NzXEu4PxKs="/>
+    </form:update>
+</div>

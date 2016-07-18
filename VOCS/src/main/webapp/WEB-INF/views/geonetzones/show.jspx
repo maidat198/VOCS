@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_nw_domain_GeoNetZone" object="${geonetzone}" path="/geonetzones" z="u0Udpx2/UlGhuAbDLTXF7aN/3uE=">
+        <field:display field="cellId" id="s_com_nw_domain_GeoNetZone_cellId" object="${geonetzone}" z="9f1aZAZT1AzIYiCv7ZXHn4IFNQU="/>
+        <field:display field="geoHomeZoneId" id="s_com_nw_domain_GeoNetZone_geoHomeZoneId" object="${geonetzone}" z="G/y0UV2M7UDuIjeYkbt/o5HlpNE="/>
+        <field:display date="true" dateTimePattern="${geoNetZone_updatedate_date_format}" field="updateDate" id="s_com_nw_domain_GeoNetZone_updateDate" object="${geonetzone}" z="wt02sC2x9SvQslGR057sjI/xx5k="/>
+    </page:show>
+</div>

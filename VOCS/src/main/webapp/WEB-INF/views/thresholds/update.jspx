@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_nw_domain_Threshold" idField="thresholdId" modelAttribute="threshold" path="/thresholds" versionField="Version" z="hY8s85qGQQEF2b45mERLRERZIvw=">
+        <field:checkbox field="isPercentage" id="c_com_nw_domain_Threshold_isPercentage" z="xhsvFVQe8vJrm55Hxi4IL0KAP8U="/>
+        <field:input field="thresholdType" id="c_com_nw_domain_Threshold_thresholdType" validationMessageCode="field_invalid_integer" z="F7ylh2jTwD02Q151uF1IlToW6Qw="/>
+        <field:input field="thresValue" id="c_com_nw_domain_Threshold_thresValue" validationMessageCode="field_invalid_integer" z="HfXZc4uZDebdsWqpzBQSO+wPrWE="/>
+        <field:input field="thresholdName" id="c_com_nw_domain_Threshold_thresholdName" z="318nz4Y6pPb/IZNASm3FFC/bIpY="/>
+        <field:input field="externalId" id="c_com_nw_domain_Threshold_externalId" validationMessageCode="field_invalid_integer" z="Pf/6beSLxIDT9Yr1De0vXhZO0Ic="/>
+        <field:input field="triggerId" id="c_com_nw_domain_Threshold_triggerId" validationMessageCode="field_invalid_integer" z="pjwaUG7QR4f1E+CB3/l2xS6I2VU="/>
+    </form:update>
+</div>

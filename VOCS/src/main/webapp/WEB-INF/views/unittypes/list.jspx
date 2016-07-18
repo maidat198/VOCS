@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_nw_domain_UnitType" items="${unittypes}" z="yVvTQPmMDlqXm1HbTiBP18h/Dug=">
+        <table:table data="${unittypes}" id="l_com_nw_domain_UnitType" path="/unittypes" typeIdFieldName="unitTypeId" z="G3tXerciJ4jVpohDcWZWHR6h4RE=">
+            <table:column id="c_com_nw_domain_UnitType_name" property="name" z="eoR03+gj2/TP6V5hh8s3+VRzl8M="/>
+            <table:column id="c_com_nw_domain_UnitType_precisions" property="precisions" z="XX115JQIOff/b/oIZGMC2hmY54k="/>
+            <table:column id="c_com_nw_domain_UnitType_baseRate" property="baseRate" z="iaJWGiABwmpt3I3HGI6xx+A9kM8="/>
+            <table:column id="c_com_nw_domain_UnitType_displayRate" property="displayRate" z="y8snKD4kYGsJ0/xoViFrztxheWU="/>
+            <table:column id="c_com_nw_domain_UnitType_remark" property="remark" z="41bsY2482O/gCNXDDgr1k9AMwoA="/>
+        </table:table>
+    </page:list>
+</div>

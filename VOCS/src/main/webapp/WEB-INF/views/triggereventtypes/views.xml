@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="triggereventtypes/list">
+        <put-attribute name="body" value="/WEB-INF/views/triggereventtypes/list.jspx"/>
+    </definition>
+<definition extends="default" name="triggereventtypes/show">
+        <put-attribute name="body" value="/WEB-INF/views/triggereventtypes/show.jspx"/>
+    </definition>
+<definition extends="default" name="triggereventtypes/create">
+        <put-attribute name="body" value="/WEB-INF/views/triggereventtypes/create.jspx"/>
+    </definition>
+<definition extends="default" name="triggereventtypes/update">
+        <put-attribute name="body" value="/WEB-INF/views/triggereventtypes/update.jspx"/>
+    </definition>
+</tiles-definitions>

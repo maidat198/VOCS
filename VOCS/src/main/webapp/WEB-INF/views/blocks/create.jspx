@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_nw_domain_Block" modelAttribute="block" path="/blocks" render="${empty dependencies}" z="lZzyJEWs6+XOKL4Bs7fcN+YYRW4=">
+        <field:input field="blockType" id="c_com_nw_domain_Block_blockType" validationMessageCode="field_invalid_integer" z="OsPvA+cAdroJpUvOJquwhshovUc="/>
+        <field:select field="categoryId" id="c_com_nw_domain_Block_categoryId" itemValue="categoryId" items="${categorys}" path="/categorys" z="GaneFcdL8Im0q6hAyzdz31f3WvM="/>
+        <field:input field="blockName" id="c_com_nw_domain_Block_blockName" z="hvyxdPZ2xE1ELw4lgRuOZAtt89E="/>
+        <field:checkbox field="isUseSpecialMethod" id="c_com_nw_domain_Block_isUseSpecialMethod" z="WyeVdnXNYXtHSBB2eM2EwDqK2sw="/>
+        <field:checkbox field="isCreateNewBalance" id="c_com_nw_domain_Block_isCreateNewBalance" z="AgmAhZ5Js/2gXzi1DypbtDAjKt4="/>
+        <field:input field="affectedObjType" id="c_com_nw_domain_Block_affectedObjType" validationMessageCode="field_invalid_integer" z="W9xEIkaR0JqNp/AGuyCvaQpv3Gg="/>
+        <field:input field="affectedValue" id="c_com_nw_domain_Block_affectedValue" validationMessageCode="field_invalid_integer" z="OobAZcARQtPEHOKkxE7+byL0srA="/>
+        <field:input field="affectedField" id="c_com_nw_domain_Block_affectedField" z="9HLOU56XlMJqWJOLvhU6+tiS1uk="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_nw_domain_Block" render="${not empty dependencies}" z="bYqLPj1OP2E1C5p2Vg28R/7iiCU="/>
+</div>

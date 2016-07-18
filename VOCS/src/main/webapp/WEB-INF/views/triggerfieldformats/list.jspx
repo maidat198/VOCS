@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_nw_domain_TriggerFieldFormat" items="${triggerfieldformats}" z="uTD3DAS5RtRJCfdwoTnqrr38/4o=">
+        <table:table data="${triggerfieldformats}" id="l_com_nw_domain_TriggerFieldFormat" path="/triggerfieldformats" typeIdFieldName="formatTemplateId" z="uHjhuZGlg0zI+AanM6xvN95sOK8=">
+            <table:column id="c_com_nw_domain_TriggerFieldFormat_langId" property="langId" z="rnlhsws3l7QIpMtDz9HHKrA7gNo="/>
+            <table:column id="c_com_nw_domain_TriggerFieldFormat_text" property="text" z="BKMR1tzt4+pSxMHhEdaz4vPgk5c="/>
+            <table:column id="c_com_nw_domain_TriggerFieldFormat_formatType" property="formatType" z="tXsRc6AzxpUymu+007t0knuIWDk="/>
+        </table:table>
+    </page:list>
+</div>

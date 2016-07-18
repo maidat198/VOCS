@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_nw_domain_DecisionTable" object="${decisiontable}" path="/decisiontables" z="tKWpZvl0fGtaStNxryP8PBdVHNg=">
+        <field:display field="decisionTableName" id="s_com_nw_domain_DecisionTable_decisionTableName" object="${decisiontable}" z="eMUvnqsVwaNB8oGmV0S9QbzK3gw="/>
+        <field:display field="defaultFormulaIndex" id="s_com_nw_domain_DecisionTable_defaultFormulaIndex" object="${decisiontable}" z="oJ7v+XZnuBi5H7jNyX/0VkzMdqU="/>
+        <field:display field="remark" id="s_com_nw_domain_DecisionTable_remark" object="${decisiontable}" z="Mz0wzk16SGFDR5LCMAonBqlxSiY="/>
+        <field:display field="categoryId" id="s_com_nw_domain_DecisionTable_categoryId" object="${decisiontable}" z="+apSCD9998joWHrNoPIOoju4jEM="/>
+    </page:show>
+</div>

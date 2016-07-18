@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_nw_domain_Formula" idField="formulaId" modelAttribute="formula" path="/formulas" versionField="Version" z="zJ0YknPojDcxHQePt4dBHw930No=">
+        <field:input field="formulaType" id="c_com_nw_domain_Formula_formulaType" validationMessageCode="field_invalid_integer" z="2Uf1s8aK2VDiQZ9sm5Zcdi2E2ww="/>
+        <field:input field="a" id="c_com_nw_domain_Formula_a" validationMessageCode="field_invalid_integer" z="Sf9qp9TcqH3KixGEbXQtK8tB2JY="/>
+        <field:input field="b" id="c_com_nw_domain_Formula_b" validationMessageCode="field_invalid_integer" z="tLXZVv7uiLscvHzj6ZlBiRUoEvs="/>
+        <field:input field="per" id="c_com_nw_domain_Formula_per" validationMessageCode="field_invalid_integer" z="viKC5cthuK0AmByftsVPYR3lj9E="/>
+        <field:select field="categoryId" id="c_com_nw_domain_Formula_categoryId" itemValue="categoryId" items="${categorys}" path="/categorys" z="aYY5McKADEjV4DEN4wSrTjo/mro="/>
+        <field:select field="triggerOcsId" id="c_com_nw_domain_Formula_triggerOcsId" itemValue="triggerOcsId" items="${triggerocss}" path="/triggerocss" z="X3k1MOc4S0duQUE4V+BxVHleiiY="/>
+        <field:checkbox field="isPercentage" id="c_com_nw_domain_Formula_isPercentage" z="5QG0SDKXHR2+rQ2+IkBg02Y98Ec="/>
+        <field:input field="templateBits" id="c_com_nw_domain_Formula_templateBits" validationMessageCode="field_invalid_integer" z="ALZcSDWffZ6UxRj78FkIV4Qibe4="/>
+        <field:input field="normalizingValueType" id="c_com_nw_domain_Formula_normalizingValueType" validationMessageCode="field_invalid_integer" z="TewqtxmDkPWbJ5SvYvWn+CxbhU0="/>
+        <field:input field="formulaErrorCode" id="c_com_nw_domain_Formula_formulaErrorCode" validationMessageCode="field_invalid_integer" z="Jc6J/wHWgU9WMbkcj5bZjrQK/Ss="/>
+    </form:update>
+</div>

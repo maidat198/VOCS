@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_nw_domain_Formula" object="${formula}" path="/formulas" z="0GYVr4JX+f1gGJ3slKf7kamZV1c=">
+        <field:display field="formulaType" id="s_com_nw_domain_Formula_formulaType" object="${formula}" z="PQ3JQ49+3T6+6J5ucSRoPw2eA7U="/>
+        <field:display field="a" id="s_com_nw_domain_Formula_a" object="${formula}" z="MKKjtK4slytXJnWirYU3b0JQ/qQ="/>
+        <field:display field="b" id="s_com_nw_domain_Formula_b" object="${formula}" z="TSsE3yJrbuE/V7KMlvUjPenwRNU="/>
+        <field:display field="per" id="s_com_nw_domain_Formula_per" object="${formula}" z="SUZNsVh7ea4uz2KrlUr0oMicdjI="/>
+        <field:display field="categoryId" id="s_com_nw_domain_Formula_categoryId" object="${formula}" z="2vJvO4BrOPdvQY+3OHQYnuzxmx8="/>
+        <field:display field="triggerOcsId" id="s_com_nw_domain_Formula_triggerOcsId" object="${formula}" z="wkhJP4dgmwqMEU0GnKlBZew2ftI="/>
+        <field:display field="isPercentage" id="s_com_nw_domain_Formula_isPercentage" object="${formula}" z="AYMREcxl4W8++zmULTlRq0/hDVY="/>
+        <field:display field="templateBits" id="s_com_nw_domain_Formula_templateBits" object="${formula}" z="vQUlIPv1vaYdn31HAi4jDsIjOuA="/>
+        <field:display field="normalizingValueType" id="s_com_nw_domain_Formula_normalizingValueType" object="${formula}" z="K0eM4hms3PDjg4JUJ1PNFlrNRWM="/>
+        <field:display field="formulaErrorCode" id="s_com_nw_domain_Formula_formulaErrorCode" object="${formula}" z="HBuBLdNopNapSUo6ldXCjrVHz1g="/>
+    </page:show>
+</div>

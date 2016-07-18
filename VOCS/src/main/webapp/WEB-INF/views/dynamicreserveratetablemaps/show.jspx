@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_nw_domain_DynamicReserveRateTableMap" object="${dynamicreserveratetablemap}" path="/dynamicreserveratetablemaps" z="8gDT6FGvHwGuU8IwsQBPZLiGKSg=">
+        <field:display field="rateTableId" id="s_com_nw_domain_DynamicReserveRateTableMap_rateTableId" object="${dynamicreserveratetablemap}" z="dkIqGCc5tYLQugrMg+yPWzv1/Qo="/>
+        <field:display field="dynamicReserveId" id="s_com_nw_domain_DynamicReserveRateTableMap_dynamicReserveId" object="${dynamicreserveratetablemap}" z="naPYBFYD4dfytZ5qlm/y0tC8MFQ="/>
+        <field:display field="rateTableIndex" id="s_com_nw_domain_DynamicReserveRateTableMap_rateTableIndex" object="${dynamicreserveratetablemap}" z="1BZ0lrkMmIknG92M8rf2qa79PqY="/>
+    </page:show>
+</div>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_nw_domain_Actions" items="${actionses}" z="LzdLLdm1tL932wofWoWVvvy+Lq4=">
+        <table:table data="${actionses}" id="l_com_nw_domain_Actions" path="/actionses" typeIdFieldName="actionId" z="jLBN7A9cJzW2CH0sMwwjLEAGT4w=">
+            <table:column id="c_com_nw_domain_Actions_actionName" property="actionName" z="T72cI6t6/GHaK0AXjnhAjD6wWm8="/>
+            <table:column id="c_com_nw_domain_Actions_actionType" property="actionType" z="vl95Zeo5clM411CygrdNbTWo5Yo="/>
+            <table:column id="c_com_nw_domain_Actions_category_id" property="category_id" z="q+h5YAUMNSVL2WeAdPTGEJrU+2I="/>
+            <table:column id="c_com_nw_domain_Actions_sortPriceComponentId" property="sortPriceComponentId" z="hxfRXAUwDrzTI26SQ6cXu0eLiCg="/>
+            <table:column id="c_com_nw_domain_Actions_dynamicReserveId" property="dynamicReserveId" z="L4Jek4VwOcfY8PoGcupheBg4Ta4="/>
+        </table:table>
+    </page:list>
+</div>

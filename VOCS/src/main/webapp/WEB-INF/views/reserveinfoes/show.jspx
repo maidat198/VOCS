@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_nw_domain_ReserveInfo" object="${reserveinfo}" path="/reserveinfoes" z="2s7b4jf0gJ1JME/XTM1b5t2fkZ0=">
+        <field:display field="maxReserve" id="s_com_nw_domain_ReserveInfo_maxReserve" object="${reserveinfo}" z="0k+hkx3im/VQjar5b80vZ35fVvA="/>
+        <field:display field="minReserve" id="s_com_nw_domain_ReserveInfo_minReserve" object="${reserveinfo}" z="W9JuLTPbrs4Ntju89hBayxTSB4g="/>
+        <field:display field="usageQuotaThreshold" id="s_com_nw_domain_ReserveInfo_usageQuotaThreshold" object="${reserveinfo}" z="K+S4xiLtn2E6P7s59MoymM2jpj8="/>
+    </page:show>
+</div>

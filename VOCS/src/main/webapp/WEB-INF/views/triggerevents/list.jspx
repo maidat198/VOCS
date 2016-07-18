@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_nw_domain_TriggerEvent" items="${triggerevents}" z="TBgAnwKAuTxxa8XbglhOIPXWAvI=">
+        <table:table data="${triggerevents}" id="l_com_nw_domain_TriggerEvent" path="/triggerevents" typeIdFieldName="triggerEventId" z="Na2LD8OTEyWGEEi4a2QEM7xZGec=">
+            <table:column id="c_com_nw_domain_TriggerEvent_trigger_event_name" property="trigger_event_name" z="aJLJFlfFg/YGg9QLXjJpgXx6TtY="/>
+            <table:column id="c_com_nw_domain_TriggerEvent_status" property="status" z="vY3j4OaaEl3v5teVNeWEC4K91+E="/>
+            <table:column id="c_com_nw_domain_TriggerEvent_delay_process" property="delay_process" z="a0hPxuYyMhFNdfmdXhd1SyVg370="/>
+            <table:column id="c_com_nw_domain_TriggerEvent_destination_id" property="destination_id" z="mEpVH6IosIyKuw3QfUoFIqullfA="/>
+            <table:column id="c_com_nw_domain_TriggerEvent_triggerOcsId" property="triggerOcsId" z="vu96LvxGvuVTH4aaFnTTpE8ZjbM="/>
+            <table:column id="c_com_nw_domain_TriggerEvent_trigger_event_type" property="trigger_event_type" z="ZtCmTxKMofzGQimbGrS+1HslvZQ="/>
+        </table:table>
+    </page:list>
+</div>

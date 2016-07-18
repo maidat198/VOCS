@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_nw_domain_ColumnDT" object="${columndt}" path="/columndts" z="zgLWIXNHn19EnpaRpw+X7jCWh9c=">
+        <field:display field="attribute" id="s_com_nw_domain_ColumnDT_attribute" object="${columndt}" z="Thk6rlEnCzZQ+gHIuwXAlvZBlM4="/>
+        <field:display field="columnIndex" id="s_com_nw_domain_ColumnDT_columnIndex" object="${columndt}" z="AO+pVe6UOBxktyjR8OXjMyj2eJs="/>
+        <field:display field="columnName" id="s_com_nw_domain_ColumnDT_columnName" object="${columndt}" z="gwNJpy60MQCu5Mppg3KwMy517dw="/>
+        <field:display field="normalizerId" id="s_com_nw_domain_ColumnDT_normalizerId" object="${columndt}" z="l1exsc72eS72m7p+9GaSZ0uVXEo="/>
+    </page:show>
+</div>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_nw_domain_RateTable" items="${ratetables}" z="dtN4hiH7Uxs9ZAsEbsPKeBVQzqg=">
+        <table:table data="${ratetables}" id="l_com_nw_domain_RateTable" path="/ratetables" typeIdFieldName="rateTableId" z="CnmgehQMEWOB5dKxht3h5fBKpPs=">
+            <table:column id="c_com_nw_domain_RateTable_rateTableName" property="rateTableName" z="yB3ZvshOP1wicYqJGNFqcKCg/Gw="/>
+            <table:column id="c_com_nw_domain_RateTable_categoryId" property="categoryId" z="QvZB7SeW6loP418zqpjZtRR9K1g="/>
+            <table:column date="true" dateTimePattern="${rateTable_effdate_date_format}" id="c_com_nw_domain_RateTable_effDate" property="effDate" z="4EkPkwLJT3fgJQ+4Q8gAng9DZzk="/>
+            <table:column date="true" dateTimePattern="${rateTable_expdate_date_format}" id="c_com_nw_domain_RateTable_expDate" property="expDate" z="HnhcG6m0pe4641u0y7TGAUIEU7A="/>
+            <table:column id="c_com_nw_domain_RateTable_remark" property="remark" z="BQvIlf91DH7gq7HbcgNvQE9Dppg="/>
+            <table:column id="c_com_nw_domain_RateTable_rateTableState" property="rateTableState" z="+UisVYwbrSjYl+NEXm7/JcgRWzU="/>
+        </table:table>
+    </page:list>
+</div>

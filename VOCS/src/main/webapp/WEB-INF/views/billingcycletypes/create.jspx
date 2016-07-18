@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_nw_domain_BillingCycleType" modelAttribute="billingCycleType" path="/billingcycletypes" render="${empty dependencies}" z="cvEkqcbtZfTz1ppXqpLskRgto6o=">
+        <field:input field="billingCycleTypeName" id="c_com_nw_domain_BillingCycleType_billingCycleTypeName" z="rJ/aGRKhhv2nhoFXBLoo+daOSbU="/>
+        <field:input field="quantity" id="c_com_nw_domain_BillingCycleType_quantity" validationMessageCode="field_invalid_integer" z="hxaw5KQIoswABMLDuEQdLQSDsDw="/>
+        <field:datetime dateTimePattern="${billingCycleType_begindate_date_format}" field="beginDate" id="c_com_nw_domain_BillingCycleType_beginDate" z="9iBJB27o8tCdrf11WUf8smIMr38="/>
+        <field:input field="remark" id="c_com_nw_domain_BillingCycleType_remark" z="TJ9jBUph3sxRxlN0o8qNMHrH0a4="/>
+        <field:select field="calcUnitId" id="c_com_nw_domain_BillingCycleType_calcUnitId" itemValue="calcUnitId" items="${calcunits}" path="/calcunits" z="bntwoeXX+tQnUT+hkTZTMFGr0kg="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_nw_domain_BillingCycleType" render="${not empty dependencies}" z="JjjiOXVlBnwLnqzfF47FKzTuTJk="/>
+</div>

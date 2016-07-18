@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_nw_domain_ZoneMap" object="${zonemap}" path="/zonemaps" z="3XpzxSnx7dP0U4h4Rzjw9l8+vnY=">
+        <field:display field="zoneMapName" id="s_com_nw_domain_ZoneMap_zoneMapName" object="${zonemap}" z="JBRhAm7LDYo/Yd29Q+L5i1C6JKI="/>
+        <field:display field="remark" id="s_com_nw_domain_ZoneMap_remark" object="${zonemap}" z="YSLgxBXAHybYoqvwL3KT4LnXX10="/>
+    </page:show>
+</div>

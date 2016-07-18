@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_nw_domain_Normalizer" idField="normalizerId" modelAttribute="normalizer" path="/normalizers" versionField="Version" z="WYTI8iwb0WfqBF4i0s6gOPdNabA=">
+        <field:input field="normalizerName" id="c_com_nw_domain_Normalizer_normalizerName" z="PbQR3bj4ligpJu3tUOsRvsdga9k="/>
+        <field:input field="normalizerType" id="c_com_nw_domain_Normalizer_normalizerType" validationMessageCode="field_invalid_integer" z="ymyApRcowfYRCnmpeFAdmJgtyzQ="/>
+        <field:input field="normalizerState" id="c_com_nw_domain_Normalizer_normalizerState" validationMessageCode="field_invalid_integer" z="2mowRUnxuajXChio/BvQjIN5V7E="/>
+        <field:input field="defaultValue" id="c_com_nw_domain_Normalizer_defaultValue" validationMessageCode="field_invalid_integer" z="k707CNGbu/TplQa+LfnXLAC7k1A="/>
+        <field:input field="valueIfNull" id="c_com_nw_domain_Normalizer_valueIfNull" validationMessageCode="field_invalid_integer" z="Yp1qiwhqpB4vVrLyJsIcM80jPA8="/>
+        <field:input field="inputField" id="c_com_nw_domain_Normalizer_inputField" z="ahwo3H9Bo1dmTBVjTIVp6v05Tgg="/>
+        <field:input field="specialFields" id="c_com_nw_domain_Normalizer_specialFields" z="usVZx3VS0TsjBO+5mXvQ+ccVDX0="/>
+        <field:select field="categoryId" id="c_com_nw_domain_Normalizer_categoryId" itemValue="categoryId" items="${categorys}" path="/categorys" z="wc6/yBuSs0EZM5jFYnotRIdKIQw="/>
+        <field:input field="queryState" id="c_com_nw_domain_Normalizer_queryState" validationMessageCode="field_invalid_integer" z="GHu2AngowpUfxYpJDQ8gdZSyXpI="/>
+    </form:update>
+</div>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_nw_domain_TriggerFieldList" idField="fieldListId" modelAttribute="triggerFieldList" path="/triggerfieldlists" versionField="Version" z="1v1Mf89KTfQaN2UVQGi2vWRyWjE=">
+        <field:input field="fieldName" id="c_com_nw_domain_TriggerFieldList_fieldName" required="true" z="d6z0gKEuvMqgBgJKjIM+bRonHfU="/>
+        <field:input field="fieldOrder" id="c_com_nw_domain_TriggerFieldList_fieldOrder" validationMessageCode="field_invalid_integer" z="4jfziKRJ8RU8mjlNxbca8oTtpmA="/>
+        <field:input field="fieldFormat" id="c_com_nw_domain_TriggerFieldList_fieldFormat" validationMessageCode="field_invalid_integer" z="SjfQdAEj5phNX29izz69W5vtIS0="/>
+        <field:select field="fieldBuilderId" id="c_com_nw_domain_TriggerFieldList_fieldBuilderId" itemValue="fieldBuilderId" items="${triggerfieldbuilders}" path="/triggerfieldbuilders" z="oX6wCdBQiLfjvVgQrXBuJh7ORfo="/>
+    </form:update>
+</div>

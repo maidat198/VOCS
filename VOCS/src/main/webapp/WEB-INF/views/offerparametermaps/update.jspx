@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_nw_domain_OfferParameterMap" idField="offerParameterMapId" modelAttribute="offerParameterMap" path="/offerparametermaps" versionField="Version" z="jGVf8ynSqMi5P/Gg77bvizQXklQ=">
+        <field:select field="offerId" id="c_com_nw_domain_OfferParameterMap_offerId" itemValue="offerId" items="${offers}" path="/offers" z="Zo9TdXyeycM/3rk1xLxzhUK/0HU="/>
+        <field:select field="parameterId" id="c_com_nw_domain_OfferParameterMap_parameterId" itemValue="parameterId" items="${parameterses}" path="/parameterses" z="Zq1w0k9/Mn5lmLdk4bprUy65szM="/>
+    </form:update>
+</div>

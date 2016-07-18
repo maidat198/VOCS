@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_nw_domain_DecisionTable" items="${decisiontables}" z="w2dgB4NZclBWqxnxXTtjeL7MuxQ=">
+        <table:table data="${decisiontables}" id="l_com_nw_domain_DecisionTable" path="/decisiontables" typeIdFieldName="decisionTableId" z="+JP8/e6wcOvsmZ1n76LVSDlxPDM=">
+            <table:column id="c_com_nw_domain_DecisionTable_decisionTableName" property="decisionTableName" z="ggHvf0OwVmm1JaQxOeA/X+qJCk8="/>
+            <table:column id="c_com_nw_domain_DecisionTable_defaultFormulaIndex" property="defaultFormulaIndex" z="7jTIOBjqqE2JCNcmRZ7EOrrBdZ4="/>
+            <table:column id="c_com_nw_domain_DecisionTable_remark" property="remark" z="2M7WH/hWakl3A1rFfSNdMD/XGvI="/>
+            <table:column id="c_com_nw_domain_DecisionTable_categoryId" property="categoryId" z="Xp6I4Knf9KHrfT6HfM4/HLTw4zw="/>
+        </table:table>
+    </page:list>
+</div>

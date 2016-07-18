@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_nw_domain_TriggerFieldFormat" object="${triggerfieldformat}" path="/triggerfieldformats" z="qwTXNzmo1MTdLQ1f2HraSTzlyG0=">
+        <field:display field="langId" id="s_com_nw_domain_TriggerFieldFormat_langId" object="${triggerfieldformat}" z="AgosAfylxAf2WNesodH99tGk5PA="/>
+        <field:display field="text" id="s_com_nw_domain_TriggerFieldFormat_text" object="${triggerfieldformat}" z="b0LkaVIBg77KK5Uw6pn1cNjqMu4="/>
+        <field:display field="formatType" id="s_com_nw_domain_TriggerFieldFormat_formatType" object="${triggerfieldformat}" z="8vRDKXZYvyem/c7UVynUmyatIoI="/>
+    </page:show>
+</div>

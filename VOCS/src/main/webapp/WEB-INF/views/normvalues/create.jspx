@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_nw_domain_NormValue" modelAttribute="normValue" path="/normvalues" render="${empty dependencies}" z="aBSwEBETggLz3c5Bg6iECAWIEdk=">
+        <field:input field="valueName" id="c_com_nw_domain_NormValue_valueName" z="IfNH0/vRs1UUvVwjyAlEwAXUpEM="/>
+        <field:input field="valueId" id="c_com_nw_domain_NormValue_valueId" validationMessageCode="field_invalid_integer" z="ndEZuq5OinqjrUaDSCx53EkE9dA="/>
+        <field:input field="description" id="c_com_nw_domain_NormValue_description" z="u7M4enZAknJafW6CEsM69wHPapw="/>
+        <field:input field="normValueIndex" id="c_com_nw_domain_NormValue_normValueIndex" validationMessageCode="field_invalid_integer" z="NEOfsbBRK6NHceK58xQWUVeSOWw="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_nw_domain_NormValue" render="${not empty dependencies}" z="hhSvwFo3oqnEVpukRa0eaVuklRc="/>
+</div>

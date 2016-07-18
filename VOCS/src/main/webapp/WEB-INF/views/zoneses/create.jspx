@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_nw_domain_Zones" modelAttribute="zones" path="/zoneses" render="${empty dependencies}" z="QaAPRm0zXE9PmWvGDUBHJmFngQo=">
+        <field:input field="zoneName" id="c_com_nw_domain_Zones_zoneName" z="Vsn+D7ni7CLxhnuvn0aZDPul6ME="/>
+        <field:input field="zoneCode" id="c_com_nw_domain_Zones_zoneCode" z="9ymcItGmHT8t3L/vFyzmA1VegdQ="/>
+        <field:input field="remark" id="c_com_nw_domain_Zones_remark" z="3lkRHjAstA1IG5wzdOGJ+fM55Aw="/>
+        <field:select field="zoneMapId" id="c_com_nw_domain_Zones_zoneMapId" itemValue="zoneMapId" items="${zonemaps}" path="/zonemaps" z="q0haF57jbY/hA6NibvvluW5dUbE="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_nw_domain_Zones" render="${not empty dependencies}" z="o5qoGrTLrZ6tTSmJT43pKLXoxH8="/>
+</div>

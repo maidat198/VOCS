@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_nw_domain_BillingCycle" idField="billingCycleId" modelAttribute="billingCycle" path="/billingcycles" versionField="Version" z="mvLpRM1yV+74plXklLxXfp5IR+s=">
+        <field:select field="billingCycleTypeId" id="c_com_nw_domain_BillingCycle_billingCycleTypeId" itemValue="billingCycleTypeId" items="${billingcycletypes}" path="/billingcycletypes" z="8W3rSbomw5dxvdvKxlaU1sLBfY0="/>
+        <field:datetime dateTimePattern="${billingCycle_cyclebegindate_date_format}" field="cycleBeginDate" id="c_com_nw_domain_BillingCycle_cycleBeginDate" z="LSasH1mFTL7Se7x0C8QpQC7ORqU="/>
+        <field:datetime dateTimePattern="${billingCycle_cycleenddate_date_format}" field="cycleEndDate" id="c_com_nw_domain_BillingCycle_cycleEndDate" z="Hj03KlzhJiOHiSwE4MKReO0I2d4="/>
+        <field:input field="states" id="c_com_nw_domain_BillingCycle_states" validationMessageCode="field_invalid_integer" z="58mTVcR/hQKW+Szw+HEXnzuJl6s="/>
+    </form:update>
+</div>

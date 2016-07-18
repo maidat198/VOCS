@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_nw_domain_Event" object="${event}" path="/events" z="DW/zH0+pu0zROHkO9r8gohpOi/U=">
+        <field:display field="eventName" id="s_com_nw_domain_Event_eventName" object="${event}" z="ms32Z1ssLmIIlF/GZ04I5HwM6rI="/>
+        <field:display field="description" id="s_com_nw_domain_Event_description" object="${event}" z="nN++ryxAIq9NOXjbvL4zAFlKLNs="/>
+        <field:display field="isRequireReserveInfo" id="s_com_nw_domain_Event_isRequireReserveInfo" object="${event}" z="638xPBQ351SAezcUg3Lsc8Ios1I="/>
+        <field:display field="eventType" id="s_com_nw_domain_Event_eventType" object="${event}" z="khoZttj4pSbR0O2cJQszS00SCsA="/>
+    </page:show>
+</div>

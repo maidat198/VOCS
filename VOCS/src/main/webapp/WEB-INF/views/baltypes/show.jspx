@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_nw_domain_BalType" object="${baltype}" path="/baltypes" z="BqiyBWaexfRN4tKdYfOgsHFGjx0=">
+        <field:display field="balTypeName" id="s_com_nw_domain_BalType_balTypeName" object="${baltype}" z="yyLNzwgoc1gvmp2L1MJy4iF0vRQ="/>
+        <field:display field="description" id="s_com_nw_domain_BalType_description" object="${baltype}" z="K2ZNUIRcDSnNDgke27FW6jxm/Vw="/>
+        <field:display field="externalId" id="s_com_nw_domain_BalType_externalId" object="${baltype}" z="K6k1ZRzt9ymBoWyvl2BaIBmHnRw="/>
+        <field:display field="balTypeType" id="s_com_nw_domain_BalType_balTypeType" object="${baltype}" z="9FO9oslI546DayMPejv7jajNQbM="/>
+        <field:display field="categoryId" id="s_com_nw_domain_BalType_categoryId" object="${baltype}" z="x/OMDmAl4CKvsYq6z+jl89VrjUo="/>
+        <field:display field="paymentType" id="s_com_nw_domain_BalType_paymentType" object="${baltype}" z="S2+RTyuMjjRm+gjLnJUXZMr3M7Q="/>
+        <field:display field="isCurrency" id="s_com_nw_domain_BalType_isCurrency" object="${baltype}" z="jpQkl5A0ZxcT4ZeA3eH6Qmqcrb8="/>
+        <field:display field="percision" id="s_com_nw_domain_BalType_percision" object="${baltype}" z="Qfcu9oLHvrLHyVJBTf64L/HqHmk="/>
+        <field:display field="effDateType" id="s_com_nw_domain_BalType_effDateType" object="${baltype}" z="7yG8E03cZdc8dCJsxfZIJl1d4yI="/>
+        <field:display date="true" dateTimePattern="${balType_effdate_date_format}" field="effDate" id="s_com_nw_domain_BalType_effDate" object="${baltype}" z="5ADzSa3H4ZeNSKUDIHhzYR3FRSs="/>
+        <field:display field="expDateType" id="s_com_nw_domain_BalType_expDateType" object="${baltype}" z="cfwZ53Zs9+Ih5I2kfKxjsAQpn/g="/>
+        <field:display date="true" dateTimePattern="${balType_expdate_date_format}" field="expDate" id="s_com_nw_domain_BalType_expDate" object="${baltype}" z="0YqqnXURZ8C0Gl01Dp6SPVSecGY="/>
+        <field:display field="recurringType" id="s_com_nw_domain_BalType_recurringType" object="${baltype}" z="pvfvV2S0E71p5RmmHMpVmA3JlG0="/>
+        <field:display field="recurringPeriod" id="s_com_nw_domain_BalType_recurringPeriod" object="${baltype}" z="SQIO51KE1TCGylzo0vIhuYBL294="/>
+        <field:display field="isAcm" id="s_com_nw_domain_BalType_isAcm" object="${baltype}" z="umiKTwleuRmGNGSgXU7Ty3ZcZRY="/>
+        <field:display field="unitTypeId" id="s_com_nw_domain_BalType_unitTypeId" object="${baltype}" z="jCankGETblD+D6dLyqADymkyjI0="/>
+        <field:display field="periodicPeriodType" id="s_com_nw_domain_BalType_periodicPeriodType" object="${baltype}" z="6FqW800mAhoFrezw8lTSZBswDAU="/>
+        <field:display field="periodicPeriod" id="s_com_nw_domain_BalType_periodicPeriod" object="${baltype}" z="SMYq0GIWky2oAlHYHBb0WS0aKIs="/>
+        <field:display field="windowSize" id="s_com_nw_domain_BalType_windowSize" object="${baltype}" z="n7kW03PjhDg8H5LvHVO1Ui7I1LE="/>
+        <field:display field="lowWaterMarkLevel" id="s_com_nw_domain_BalType_lowWaterMarkLevel" object="${baltype}" z="dszokXZnl/l4Tu/MQ5a6MqEduSE="/>
+        <field:display field="highWatermarkLevel" id="s_com_nw_domain_BalType_highWatermarkLevel" object="${baltype}" z="6dF6HXxD4Ryg8RBizh5Too6px0A="/>
+        <field:display field="billingCycleTypeId" id="s_com_nw_domain_BalType_billingCycleTypeId" object="${baltype}" z="Gwjxmf9WQ2Kh+twYIPq5a58LVl8="/>
+    </page:show>
+</div>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_nw_domain_SortPriceComponent" object="${sortpricecomponent}" path="/sortpricecomponents" z="bZoGtMkMhFQJIGMgSoHge5dluS8=">
+        <field:display field="sortPriceComponentName" id="s_com_nw_domain_SortPriceComponent_sortPriceComponentName" object="${sortpricecomponent}" z="9reCLOTW64PwFRs1P/IxGv5sIY4="/>
+        <field:display field="categoryId" id="s_com_nw_domain_SortPriceComponent_categoryId" object="${sortpricecomponent}" z="vLYFMe+ChjdtwKZSTt49ra5BHqM="/>
+    </page:show>
+</div>

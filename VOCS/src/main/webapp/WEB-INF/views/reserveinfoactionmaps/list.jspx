@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_nw_domain_ReserveInfoActionMap" items="${reserveinfoactionmaps}" z="J10r13BIyMCKvKVKC+L47T2cQyw=">
+        <table:table data="${reserveinfoactionmaps}" id="l_com_nw_domain_ReserveInfoActionMap" path="/reserveinfoactionmaps" typeIdFieldName="reserveActionMapId" z="zOPR+Gr5LQvljHss2+DDCyYOf+I=">
+            <table:column id="c_com_nw_domain_ReserveInfoActionMap_reserveInfoId" property="reserveInfoId" z="LS39DqKEVLApg6p3sIgBVHQsj6g="/>
+            <table:column id="c_com_nw_domain_ReserveInfoActionMap_actionId" property="actionId" z="4Si66UWb+x+zPVfWAfsqJq9jN+Y="/>
+        </table:table>
+    </page:list>
+</div>

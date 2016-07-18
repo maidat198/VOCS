@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_nw_domain_Offer" items="${offers}" z="/3Vs+CWDQzxZmYNF2P/Epouw2As=">
+        <table:table data="${offers}" id="l_com_nw_domain_Offer" path="/offers" typeIdFieldName="offerId" z="jHRgk+O+DMFpysIXl5hGMbzCv6E=">
+            <table:column id="c_com_nw_domain_Offer_offerName" property="offerName" z="vWNx1viyT8WeReRqOwc1UBNIvq8="/>
+            <table:column id="c_com_nw_domain_Offer_categoryId" property="categoryId" z="7I5D2EzzwY1mwqc22cObVZoXmH4="/>
+            <table:column id="c_com_nw_domain_Offer_priority" property="priority" z="BWAxo2N5+zw9oBzQfncGmTXqv0E="/>
+            <table:column date="true" dateTimePattern="${offer_effdate_date_format}" id="c_com_nw_domain_Offer_effDate" property="effDate" z="Ej8zyqd+f4XhoQ2mGt8JF8WuCkU="/>
+            <table:column date="true" dateTimePattern="${offer_expdate_date_format}" id="c_com_nw_domain_Offer_expDate" property="expDate" z="h0QT4q+x2iYYdbgtpsW055dgMkM="/>
+            <table:column id="c_com_nw_domain_Offer_createType" property="createType" z="r1PgtTIdiKaFRuDvl2JEjO57nyY="/>
+        </table:table>
+    </page:list>
+</div>

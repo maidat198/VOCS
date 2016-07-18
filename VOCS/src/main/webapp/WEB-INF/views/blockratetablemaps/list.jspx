@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_nw_domain_BlockRateTableMap" items="${blockratetablemaps}" z="Kox8ZIwg+zlKm2K/HESzaxyMjfc=">
+        <table:table data="${blockratetablemaps}" id="l_com_nw_domain_BlockRateTableMap" path="/blockratetablemaps" typeIdFieldName="blockTableRateMapId" z="EucIqVIOaqLmQ/zq8kzfjI87HnE=">
+            <table:column id="c_com_nw_domain_BlockRateTableMap_blockId" property="blockId" z="H97F0wHGGJwXAu/DV8U68MZ+7LI="/>
+            <table:column id="c_com_nw_domain_BlockRateTableMap_rateTableId" property="rateTableId" z="+GQMqvWJlvuL2a1sC+SSwG8qt48="/>
+            <table:column id="c_com_nw_domain_BlockRateTableMap_componentType" property="componentType" z="4yLlQdr/ZAON2hc5bR+I9qS7HjA="/>
+            <table:column id="c_com_nw_domain_BlockRateTableMap_rateTableIndex" property="rateTableIndex" z="br1KjozMc4N9PmWr+IwWWVuCns4="/>
+        </table:table>
+    </page:list>
+</div>

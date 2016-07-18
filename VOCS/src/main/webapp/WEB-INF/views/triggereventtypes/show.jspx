@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_nw_domain_TriggerEventType" object="${triggereventtype}" path="/triggereventtypes" z="/0zugUArrlqxHsKtnzsX3gYGT+A=">
+        <field:display field="eventName" id="s_com_nw_domain_TriggerEventType_eventName" object="${triggereventtype}" z="rTjK5QDmwHUtHqJde6+NYJT8NKI="/>
+        <field:display field="eventDescription" id="s_com_nw_domain_TriggerEventType_eventDescription" object="${triggereventtype}" z="t8m4g43WPfJgqP6pkLnSkhh2U9Y="/>
+        <field:display field="protocol" id="s_com_nw_domain_TriggerEventType_protocol" object="${triggereventtype}" z="B9e7dunXO4OM6af9L0o//uBwSms="/>
+    </page:show>
+</div>

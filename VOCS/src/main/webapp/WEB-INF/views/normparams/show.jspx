@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_nw_domain_NormParam" object="${normparam}" path="/normparams" z="cvRQNHt7moz6+rwHF39eoqy9Clg=">
+        <field:display field="configInput" id="s_com_nw_domain_NormParam_configInput" object="${normparam}" z="8oU4HJ/r+a+MMm8uIQ/2d7FzeA4="/>
+        <field:display field="normParamIndex" id="s_com_nw_domain_NormParam_normParamIndex" object="${normparam}" z="u+OxjuQEalD8N8seQaJ7dkVrcOE="/>
+    </page:show>
+</div>

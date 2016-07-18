@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_nw_domain_NormalizerNormParamMap" object="${normalizernormparammap}" path="/normalizernormparammaps" z="fK7ODvgRRrTlgYdlMv/sQl5az2U=">
+        <field:display field="normalizerId" id="s_com_nw_domain_NormalizerNormParamMap_normalizerId" object="${normalizernormparammap}" z="/FxN5H9STGS8nrRzHDvRDb7E/4w="/>
+        <field:display field="normParamId" id="s_com_nw_domain_NormalizerNormParamMap_normParamId" object="${normalizernormparammap}" z="wcTcs/0vObEeypRihrw14M6fIWc="/>
+    </page:show>
+</div>

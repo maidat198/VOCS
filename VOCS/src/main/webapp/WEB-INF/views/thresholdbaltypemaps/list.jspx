@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_nw_domain_ThresholdBalTypeMap" items="${thresholdbaltypemaps}" z="xPPGgKyRoCcaUf2ix04ab9S4cWY=">
+        <table:table data="${thresholdbaltypemaps}" id="l_com_nw_domain_ThresholdBalTypeMap" path="/thresholdbaltypemaps" typeIdFieldName="thresholdBaltypeMapId" z="sBXhcSIKwpiK768Y87se37VjYzw=">
+            <table:column id="c_com_nw_domain_ThresholdBalTypeMap_thresholdId" property="thresholdId" z="Oxv4o8rVg74DknzwCQByRnBIKQE="/>
+            <table:column id="c_com_nw_domain_ThresholdBalTypeMap_baltypeId" property="baltypeId" z="nbnuKJjWT8waKRvRn3e1atnrLC0="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_nw_domain_NormalizerNormParamMap" items="${normalizernormparammaps}" z="Ti53UjK4JTVEyjqlZe82Mc2YZ7o=">
+        <table:table data="${normalizernormparammaps}" id="l_com_nw_domain_NormalizerNormParamMap" path="/normalizernormparammaps" typeIdFieldName="normalizerNormParamMapId" z="XZDLxlHTqCgsd5gIyv4rh78CMqc=">
+            <table:column id="c_com_nw_domain_NormalizerNormParamMap_normalizerId" property="normalizerId" z="rNScCFhYqZ3ofiEZRFuxsiBTHQo="/>
+            <table:column id="c_com_nw_domain_NormalizerNormParamMap_normParamId" property="normParamId" z="9JltKeHH6PgLQLpR9yL8f9S96v0="/>
+        </table:table>
+    </page:list>
+</div>
