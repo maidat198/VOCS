@@ -42,10 +42,10 @@
       <spring:escapeBody htmlEscape="true" >${itemLabel}</spring:escapeBody>
     </c:set>
 
-    <div id="_${fn:escapeXml(id)}_id">
+    <div id="_${fn:escapeXml(id)}_id" class="form-group">
       <c:choose>
         <c:when test="${not empty items}">
-          <label for="_${sec_field}_id">
+          <label for="_${sec_field}_id" class="col-sm-2 control-label">
             <c:choose>
               <c:when test="${empty renderLabel or renderLabel}">
                 <c:out value="${fn:escapeXml(label)}" />
@@ -56,13 +56,14 @@
               </c:otherwise>
             </c:choose>
           </label>
+          <div class="col-sm-10">
           <c:choose>
             <c:when test="${empty itemValue}">
               <c:choose>
                 <c:when test="${disableFormBinding}">
                   <c:choose>
                     <c:when test="${multiple}">
-                      <select id="_${sec_field}_id" name="${sec_field}" multiple="${multiple}">
+                      <select id="_${sec_field}_id" name="${sec_field}"> <!-- multiple="${multiple}" -->
                       <c:forEach items="${items}" var="item">
                         <option value="${item}">
                         <c:choose>
@@ -100,7 +101,7 @@
                     <c:when test="${empty itemLabel}">
                       <c:choose>
                         <c:when test="${multiple}">
-                          <form:select id="_${sec_field}_id" items="${items}" path="${sec_field}" disabled="${disabled}" multiple="${multiple}" />
+                          <form:select id="_${sec_field}_id" items="${items}" path="${sec_field}" disabled="${disabled}"  /> <!-- multiple="${multiple}" -->
                         </c:when>
                         <c:otherwise>
                           <form:select id="_${sec_field}_id" items="${items}" path="${sec_field}" disabled="${disabled}" />
@@ -110,7 +111,7 @@
                     <c:otherwise>
                       <c:choose>
                         <c:when test="${multiple}">
-                          <form:select id="_${sec_field}_id" items="${items}" path="${sec_field}" disabled="${disabled}" multiple="${multiple}" itemLabel="${sec_itemLabel}"/>
+                          <form:select id="_${sec_field}_id" items="${items}" path="${sec_field}" disabled="${disabled}"  itemLabel="${sec_itemLabel}"/>
                         </c:when>
                         <c:otherwise>
                           <form:select id="_${sec_field}_id" items="${items}" path="${sec_field}" disabled="${disabled}" itemLabel="${sec_itemLabel}"/>
@@ -128,7 +129,7 @@
                 <c:when test="${disableFormBinding}">
                   <c:choose>
                     <c:when test="${multiple}">
-                      <select id="_${sec_field}_id" name="${sec_field}" multiple="${multiple}">
+                      <select id="_${sec_field}_id" name="${sec_field}" >
                         <c:forEach items="${items}" var="item">
                           <option value="${item[fn:escapeXml(itemValue)]}">
                             <c:choose>
@@ -144,7 +145,7 @@
                       </select>
                     </c:when>
                     <c:otherwise>
-                      <select id="_${sec_field}_id" name="${sec_field}" multiple="${multiple}">
+                      <select id="_${sec_field}_id" name="${sec_field}" >
                         <c:forEach items="${items}" var="item">
                           <option value="${item[fn:escapeXml(itemValue)]}">
                             <c:choose>
@@ -166,7 +167,7 @@
                     <c:when test="${empty itemLabel}">
                       <c:choose>
                         <c:when test="${multiple}">
-                          <form:select id="_${sec_field}_id" items="${items}" path="${sec_field}" disabled="${disabled}" multiple="${multiple}" itemValue="${fn:escapeXml(itemValue)}" />
+                          <form:select id="_${sec_field}_id" items="${items}" path="${sec_field}" disabled="${disabled}"  itemValue="${fn:escapeXml(itemValue)}" />
                         </c:when>
                         <c:otherwise>
                           <form:select id="_${sec_field}_id" items="${items}" path="${sec_field}" disabled="${disabled}" itemValue="${fn:escapeXml(itemValue)}" />
@@ -176,7 +177,7 @@
                     <c:otherwise>
                       <c:choose>
                         <c:when test="${multiple}">
-                          <form:select id="_${sec_field}_id" items="${items}" path="${sec_field}" disabled="${disabled}" multiple="${multiple}" itemValue="${fn:escapeXml(itemValue)}" itemLabel="${sec_itemLabel}"/>
+                          <form:select id="_${sec_field}_id" items="${items}" path="${sec_field}" disabled="${disabled}"  itemValue="${fn:escapeXml(itemValue)}" itemLabel="${sec_itemLabel}"/>
                         </c:when>
                         <c:otherwise>
                           <form:select id="_${sec_field}_id" items="${items}" path="${sec_field}" disabled="${disabled}" itemValue="${fn:escapeXml(itemValue)}" itemLabel="${sec_itemLabel}"/>
@@ -190,6 +191,7 @@
               </c:choose>
             </c:otherwise>
           </c:choose>
+          </div>
           <c:choose>
             <c:when test="${multiple == false}">
               <script type="text/javascript">Spring.addDecoration(new Spring.ElementDecoration({elementId : '_${sec_field}_id', widgetType: 'dijit.form.FilteringSelect', widgetAttrs : {hasDownArrow : true}})); </script>

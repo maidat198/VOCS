@@ -34,8 +34,10 @@
     </c:if>
 
     <script type="text/javascript">dojo.require('dijit.form.DateTextBox')</script>
-    <div id="_${sec_id}_id">
-      <label for="_${sec_field}_id">
+   
+    
+    <div id="_${sec_id}_id" class="form-group">
+      <label for="_${sec_field}_id" class="col-sm-2 control-label">
         <c:choose>
           <c:when test="${empty renderLabel or renderLabel}">
             <c:out value="${label}" />
@@ -46,16 +48,22 @@
           </c:otherwise>
         </c:choose>
       </label>
+      <div class="col-sm-10">
+      	
+
+		
       <c:choose>
         <c:when test="${disableFormBinding}">
-          <input id="_${sec_field}_id" name="${sec_field}" />
+          <input id="_${sec_field}_id" name="${sec_field}" class="form-control"/>
         </c:when>
-        <c:otherwise>
-          <form:input id="_${sec_field}_id" path="${sec_field}" disabled="${disabled}" />
+        <c:otherwise>	
+          <form:input id="_${sec_field}_id" path="${sec_field}" disabled="${disabled}"  class="form-control"/>
           <br />
           <form:errors cssClass="errors" id="_${sec_field}_error_id" path="${sec_field}" />
         </c:otherwise>
       </c:choose>
+
+      </div>
       <spring:message arguments="${fn:escapeXml(label)}" code="field_invalid" var="field_invalid" htmlEscape="false" />
       <c:choose>
         <c:when test="${required}">

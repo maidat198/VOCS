@@ -41,8 +41,10 @@
     <util:panel id="${id}" title="${title_msg}" openPane="${openPane}">
       <c:choose>
         <c:when test="${not empty object}">
+          <div class="box-body">	
           <jsp:doBody />
-          <div class="quicklinks">
+          </div>
+          <div class="box-footer">
             <span>
               <c:if test="${delete}">
                 <spring:url value="${path}/${itemId}" var="delete_form_url" />

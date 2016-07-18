@@ -29,11 +29,13 @@
         <input type="hidden" name="find" value="${fn:escapeXml(finderName)}" />
         <input type="hidden" name="page" value="1" />
         <input type="hidden" name="size" value="${empty param.size ? 10 : param.size}" />
+        <div class="box-body">
         <jsp:doBody />
-        <div class="submit" id="${fn:escapeXml(id)}_${fn:escapeXml(finderName)}_submit">
+        </div>
+        <div class="box-footer" id="${fn:escapeXml(id)}_${fn:escapeXml(finderName)}_submit">
           <spring:message code="button_find" var="find_button" htmlEscape="false" />
           <script type="text/javascript">Spring.addDecoration(new Spring.ValidateAllDecoration({elementId:'proceed', event:'onclick'}));</script>
-          <input id="proceed" type="submit" value="${fn:escapeXml(find_button)}"/>
+          <input id="proceed" class="btn btn-info" type="submit" value="${fn:escapeXml(find_button)}"/>
         </div>
       </form:form>
     </util:panel>

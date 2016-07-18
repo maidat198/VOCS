@@ -18,8 +18,8 @@
     </c:set>
    
     <script type="text/javascript">dojo.require("dijit.form.CheckBox");</script>
-    <div id="_${sec_id}_id">
-      <label for="_${sec_field}_id">
+    <div id="_${sec_id}_id" class="form-group">
+      <label for="_${sec_field}_id" class="col-sm-2 control-label">
         <c:choose>
           <c:when test="${empty renderLabel or renderLabel}">
             <c:out value="${fn:escapeXml(label)}" />
@@ -30,14 +30,18 @@
           </c:otherwise>
         </c:choose>
       </label>
+    
+      	
       <c:choose>
         <c:when test="${disableFormBinding}">
-          <input id="_${sec_field}_id" name="${sec_field}" type="checkbox"/>
+          <input id="_${sec_field}_id" name="${sec_field}" type="checkbox" />
         </c:when>
         <c:otherwise>
           <form:checkbox id="_${sec_field}_id" path="${sec_field}"/>
         </c:otherwise>
       </c:choose>
+      
+   
       <script type="text/javascript">
       	Spring.addDecoration(new Spring.ElementDecoration({elementId : '_${sec_field}_id', widgetType : 'dijit.form.CheckBox', widgetAttrs : {}}));
       </script>
